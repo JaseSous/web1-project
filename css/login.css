@@ -39,6 +39,13 @@ body {
     background: white;
 }
 
+.title {
+    text-align: center;
+    font-size: 250%;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
 .login-container .login-form{
     flex: 1.5;
 }
@@ -123,6 +130,8 @@ body {
 }
 
 .login-container .login-form .forgot-password-button {
+    text-align: center;
+    display: block;
     color:rgb(70, 70, 70);
     text-decoration: none;
     transition: 0.3s;
