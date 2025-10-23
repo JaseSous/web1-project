@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
 .home-link {
     position: absolute;
     top: 20px;
@@ -20,10 +28,9 @@
     min-width: 300px;
     max-width: 1000px;
     min-height: 650px;
-    margin: 15vh 20vw;
     display: flex;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
     background: white;
 }
@@ -85,7 +92,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 15px;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(240, 240, 240);
 
     transition: 0.3s;
 }
