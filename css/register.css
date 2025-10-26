@@ -1,0 +1,173 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.home-link:hover {
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.login-container{
+    width: 60vw;
+    min-width: 500px;
+    max-width: 1000px;
+    display: flex;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 250%;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.login-container .login-form{
+    flex: 1.5;
+}
+
+.login-container .image-container{
+    flex: 1;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/registerthumbnail.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container .login-form .login-hr-bar {
+    width: 30%;
+    height: 3px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.login-container .login-form:hover .login-hr-bar {
+    width: 60%;
+    transition: 0.3s;
+}
+
+.login-container .login-form .login-form-label {
+    display: block;
+    margin-bottom: 10px;
+    margin-inline: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login-container .login-form .login-text-input {
+    width: calc(100% - 40px);
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(240, 240, 240);
+
+    transition: 0.3s;
+}
+
+.login-container .login-form .login-text-input:focus {
+    width: calc(100% - 35px);
+    transition: 0.3s;
+}
+
+.login-container .login-form .login-submit-button {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-container .login-form .login-submit-button:hover {
+    background-color: rgb(70, 70, 70);
+    transition: 0.3s;
+}
+
+.login-container .external-login-title {
+    font-size: 17px;
+    text-align: center;
+    background-color: white;
+    margin-top: -0.75em;
+    margin-bottom: 30px;
+    margin-inline: auto;
+    width: 200px;
+}
+
+.login-container .external-login-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.login-container .external-login-container .external-login-icon {
+    width: 60px;
+    height: calc(width);
+}
+
+.image-container .register-button {
+    color:rgb(200, 200, 200);
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.image-container .register-button:visited {
+    color:rgb(200, 200, 200);
+}
+
+.image-container .register-button:hover {
+    color:rgb(163, 163, 163);
+    transition: 0.3s;
+}
+
+.image-container .welcome-hr-bar {
+    width: 30%;
+    height: 3px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.image-container:hover .welcome-hr-bar {
+    width: 60%;
+    transition: 0.3s;
+}
