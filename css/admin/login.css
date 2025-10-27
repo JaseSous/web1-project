@@ -52,7 +52,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    background-image: url('../images/admin-login-thumbnail.jpg');
+    background-image: url('../../images/admin-login-thumbnail.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
