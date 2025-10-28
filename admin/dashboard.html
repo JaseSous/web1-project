@@ -11,62 +11,64 @@
 
     <body>
         <div class="sidebar">
-            <div style="display: flex; align-items: center; width: 300px;">
-                <img src="images/logo.png" width="80px" height="80px" style="margin: 10px; border-radius: 10px;">
-                <h1 style="flex: 1; color: #f7f6f2; text-align: center;">Vogue Shop</h1>
+            <div class="sidebar-title">
+                <img src="images/logo.png">
+                <h1>Vogue Shop</h1>
             </div>
 
-            <a href="">
-                <img src="images/dashboard.png">
-                <span>Bảng thống kê</span>
-            </a>
-
-            <a href="">
-                <img src="images/customers.png">
-                <span>Quản lý khách hàng</span>
-            </a>
-
-            <!-- product -->
-            <input type="checkbox" id="toggle-product-submenu" style="display: none;">
-            <label for="toggle-product-submenu">
-                <img src="images/product-management.png">
-                <span>Quản lý sản phẩm</span>
-            </label>
-
-            <div class="submenu">
+            <div class="menu-panel">
                 <a href="">
-                    <img src="images/product-type.png">
-                    <span>Quản lý loại sản phẩm</span>
+                    <img src="images/dashboard.png">
+                    Bảng thống kê
                 </a>
+                
                 <a href="">
-                    <img src="images/category.png">
-                    <span>Quản lý danh mục</span>
+                    <img src="images/customers.png">
+                    Quản lý khách hàng
                 </a>
+                
+                <!-- product -->
+                <input type="checkbox" id="toggle-product-submenu" style="display: none;">
+                <label for="toggle-product-submenu">
+                    <img src="images/product-management.png">
+                    Quản lý sản phẩm
+                </label>
+                
+                <div class="submenu">
+                    <a href="">
+                        <img src="images/product-type.png">
+                        Quản lý loại sản phẩm
+                    </a>
+                    <a href="">
+                        <img src="images/category.png">
+                        Quản lý danh mục
+                    </a>
+                    <a href="">
+                        <img src="images/import-goods.png">
+                        Nhập sản phẩm
+                    </a>
+                </div>
+                <!-- end -->
+                
                 <a href="">
-                    <img src="images/import-goods.png">
-                    <span>Nhập sản phẩm</span>
+                    <img src="images/pricing.png">
+                    Quản lý giá bán
+                </a>
+                
+                <a href="">
+                    <img src="images/order.png">
+                    Quản lý đơn hàng
+                </a>
+                
+                <a href="">
+                    <img src="images/inventory-management.png">
+                    Quản lý tồn kho
                 </a>
             </div>
-            <!-- end -->
-
-            <a href="">
-                <img src="images/pricing.png">
-                <span>Quản lý giá bán</span>
-            </a>
-
-            <a href="">
-                <img src="images/order.png">
-                <span>Quản lý đơn hàng</span>
-            </a>
-
-            <a href="">
-                <img src="images/inventory-management.png">
-                <span>Quản lý tồn kho</span>
-            </a>
         </div>
-
-        <div class="content-panel">
             
+        <div class="content-panel">
+                
         </div>
     </body>
 </html>
