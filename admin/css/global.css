@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #06141b;
+    font-family: Arial;
+    display: flex;
+    padding: 10px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.sidebar {
+    min-height: 550px;
+    width: 100px;
+    height: calc(100vh - 20px);
+    background-color: #11212d;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    
+    transition: 0.3s ease;
+}
+
+.sidebar:hover {
+    width: 300px;
+    transition: 0.3s ease;
+}
+
+.sidebar a {
+    width: 300px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: #253745;
+    margin-top: 10px;
+
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #4a5c6a;
+    
+    transition: 0.2s ease;
+}
+
+.sidebar a img {
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+}
+
+.sidebar a span {
+    flex: 1;
+    color: #ccd0cf;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar label {
+    width: 300px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: #253745;
+    cursor: pointer;
+    margin-top: 10px;
+
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+.sidebar label:hover {
+    background-color: #4a5c6a;
+    
+    transition: 0.2s ease;
+}
+
+.sidebar label img {
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+}
+
+.sidebar label span {
+    flex: 1;
+    color: #ccd0cf;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar .submenu {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.sidebar .submenu img {
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+}
+
+.sidebar .submenu a {
+    color: #ccd0cf;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.sidebar input:checked~.submenu {
+    height: calc(65px * 3);
+
+    transition: 0.2s ease;
+}
+
+.content-panel {
+    margin-left: 110px;
+    width: 100%;
+    height: calc(100vh - 20px);
+    background-color: #5a6170;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+}
