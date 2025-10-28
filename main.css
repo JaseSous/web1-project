@@ -133,7 +133,7 @@ nav a {
 }
 
 .mega-col {
-  padding: 10px;
+  padding: 5px;  
 }
 
 .mega-col h4 {
@@ -149,7 +149,7 @@ nav a {
   color: #111;
   text-decoration: none;
   margin: 6px 0;
-  font-size: 14px;
+  font-size: 14px;  
   transition: color 0.2s ease;
 }
 
@@ -321,9 +321,9 @@ nav a:hover {
 }
 
 .product-grid {
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
+  gap: 10px;
   justify-items: center;
 }
 
@@ -332,11 +332,11 @@ nav a:hover {
   text-align: center;
   background: #fff;
   border-radius: 12px;
-  padding: 12px;
+  padding: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
   width: 100%;
-  max-width: 500px;
+  max-width: 350px;
 }
 
 .product-item:hover {
