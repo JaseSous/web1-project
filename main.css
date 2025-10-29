@@ -543,25 +543,6 @@ nav a:hover {
   gap: 20px;
 }
 
-.index.active {
-  background: #4e8ddf;
-  color: #000;
-  font-weight: 700;
-  animation: jump 0.3s ease;
-}
-
-.index {
-  width: 37px;
-  height: 37px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 1);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-
 .button {
   padding: 10px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 1);
@@ -570,7 +551,7 @@ nav a:hover {
   transition: opacity 0.3s ease;
 }
 
-.index:hover,
+
 .button:hover {
   transition: 0.3s;
   background-color: #4e8ddf;
