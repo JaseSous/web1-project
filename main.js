@@ -43,9 +43,7 @@ function goToSlide(n) {
 // Auto slide
 setInterval(nextSlide, 5000);
 
-// Nút prev/next
-document.querySelector('.prev').addEventListener('click', prevSlide);
-document.querySelector('.next').addEventListener('click', nextSlide);
+
 
 // ========== GIỎ HÀNG ==========
 let cart = [];
