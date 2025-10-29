@@ -48,10 +48,26 @@ body {
     border-radius: 10px;
 }
 
-.sidebar .sidebar-title h1 {
+.sidebar .sidebar-title div {
     flex: 1;
+}
+
+.sidebar .sidebar-title div h1 {
+    font-size: 30px;
     color: #f7f6f2;
-    text-align: center;
+    text-align: left;
+}
+
+.sidebar .sidebar-title div hr {
+    width: 60%;
+    margin: 5px 0;
+    color: #f7f6f2;
+}
+
+.sidebar .sidebar-title div h2 {
+    font-size: 16px;
+    color: #f7f6f2;
+    text-align: left;
 }
 
 .sidebar .menu-panel {
@@ -99,11 +115,12 @@ body {
     background-color: #253745;
     cursor: pointer;
     margin-top: 10px;
-
+    
     color: #ccd0cf;
     text-align: left;
     font-size: 18px;
     font-weight: 600;
+    white-space: nowrap;
 
     transition: 0.2s ease;
     text-decoration: none;
@@ -112,6 +129,16 @@ body {
 .sidebar .menu-panel label:hover {
     background-color: #4a5c6a;
     
+    transition: 0.2s ease;
+}
+
+.sidebar .menu-panel label .arrow {
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    left: 245px;
+    top: auto;
+
     transition: 0.2s ease;
 }
 
@@ -146,6 +173,11 @@ body {
 .sidebar .menu-panel input:checked~.submenu {
     height: calc(40px * 3);
 
+    transition: 0.2s ease;
+}
+
+.sidebar .menu-panel input:checked~label .arrow {
+    transform: rotate(180deg);
     transition: 0.2s ease;
 }
 
