@@ -3,7 +3,7 @@ let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');
 const dotsContainer = document.querySelector('.dots');
 
-// Tạo dots
+//  Tạo dots
 slides.forEach((_, i) => {
   const dot = document.createElement('span');
   dot.className = 'dot';
