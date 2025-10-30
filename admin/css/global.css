@@ -153,6 +153,7 @@ body {
     width: 50px;
     height: 50px;
     margin: 25px;
+    filter: drop-shadow(0 0 5px black);
 }
 
 .sidebar .menu-panel .submenu {
