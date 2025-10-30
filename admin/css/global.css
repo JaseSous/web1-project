@@ -17,6 +17,7 @@ body {
     width: 100px;
     height: calc(100vh - 20px);
     background-color: #11212d;
+    outline: #06141b solid 10px;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
     position: absolute;
@@ -27,6 +28,10 @@ body {
     flex-direction: column;
     
     transition: 0.3s ease;
+}
+
+.sidebar h1, .sidebar h2 {
+    margin-left: 1px;
 }
 
 .sidebar:hover {
