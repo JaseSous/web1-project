@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | Quản lý khách hàng</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/clients.css">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <img src="images/logo.png">
+                <div>
+                    <h1>Vogue Shop</h1>
+                    <hr>
+                    <h2>Trang quản lý</h2>
+                </div>
+            </div>
+
+            <div class="menu-panel">
+                <a href="dashboard.html">
+                    <img src="images/dashboard.png">
+                    Bảng thống kê
+                </a>
+                
+                <a href="">
+                    <img src="images/customers.png">
+                    Quản lý khách hàng
+                </a>
+                
+                <!-- product -->
+                <input type="checkbox" id="toggle-product-submenu" style="display: none;">
+                <label for="toggle-product-submenu">
+                    <img src="images/product-management.png">
+                    Quản lý sản phẩm
+                    <img class="arrow" src="images/arrow-down.png">
+                </label>
+                
+                <div class="submenu">
+                    <a href="">
+                        <img src="images/product-type.png">
+                        Quản lý loại sản phẩm
+                    </a>
+                    <a href="">
+                        <img src="images/category.png">
+                        Quản lý danh mục
+                    </a>
+                    <a href="">
+                        <img src="images/import-goods.png">
+                        Nhập sản phẩm
+                    </a>
+                </div>
+                <!-- end -->
+                
+                <a href="">
+                    <img src="images/pricing.png">
+                    Quản lý giá bán
+                </a>
+                
+                <a href="">
+                    <img src="images/order.png">
+                    Quản lý đơn hàng
+                </a>
+                
+                <a href="">
+                    <img src="images/inventory-management.png">
+                    Quản lý tồn kho
+                </a>
+            </div>
+        </div>
+            
+        <div class="content-panel">
+            <div class="admin-profile">
+                Xin chào, Admin1
+                <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
+            </div>
+
+            <div class="header">
+                <h1>Quản lý khách hàng</h1>
+                <input type="text" placeholder="🔍 Tìm kiếm khách hàng..." />
+            </div>
+
+            <button class="btn-add"><img src="images/add-client.png" width="20px" height="width">Thêm khách hàng</button>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Họ tên</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>KH000001</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>vana@gmail.com</td>
+                            <td>0901 234 567</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000002</td>
+                            <td>Trần Thị B</td>
+                            <td>tranb@gmail.com</td>
+                            <td>0902 345 678</td>
+                            <td class="trangthai khoa">Bị khóa</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-edit">Mở khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000003</td>
+                            <td>Trần Văn An</td>
+                            <td>tranvanan@gmail.com</td>
+                            <td>0901 123 456</td>
+                            <td class="trangthai khoa">Bị khóa</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-edit">Mở khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000004</td>
+                            <td>Lê Thị Bình</td>
+                            <td>lethibinh@gmail.com</td>
+                            <td>0982 987 654</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000005</td>
+                            <td>Phạm Minh Cường</td>
+                            <td>phamminhcuong@gmail.com</td>
+                            <td>0773 234 567</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000006</td>
+                            <td>Nguyễn Thu Dung</td>
+                            <td>nguyenthudung@gmail.com</td>
+                            <td>0868 543 210</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000007</td>
+                            <td>Đỗ Hồng Giang</td>
+                            <td>dohonggiang@gmail.com</td>
+                            <td>0919 456 789</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000008</td>
+                            <td>Hoàng Văn Khang</td>
+                            <td>hoangvankhang@gmail.com</td>
+                            <td>0394 789 123</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000009</td>
+                            <td>Mai Thanh Long</td>
+                            <td>maithanhlong@gmail.com</td>
+                            <td>0898 321 098</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                        <tr>
+                            <td>KH000010</td>
+                            <td>Vũ Quỳnh Nhi</td>
+                            <td>vuquynhnhis@gmail.com</td>
+                            <td>0707 654 321</td>
+                            <td class="trangthai hoatdong">Hoạt động</td>
+                            <td><button class="btn btn-view">Reset MK</button> <button class="btn btn-del">Khóa</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">»</a>
+            </div>
+        </div>
+    </body>
+</html>
