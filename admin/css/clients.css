@@ -15,6 +15,7 @@
 }
 
 .content-panel .search-box {
+    width: 300px;
     margin-right: 10px;
     padding: 5px;
     border-radius: 5px;
