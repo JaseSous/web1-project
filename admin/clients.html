@@ -73,26 +73,27 @@
         </div>
             
         <div class="content-panel">
-            <div class="admin-profile">
-                Xin chào, Admin1
-                <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
-            </div>
-
             <div class="header">
                 <h1>Quản lý khách hàng</h1>
-                <input type="text" placeholder="🔍 Tìm kiếm khách hàng..." />
+                <div class="admin-profile">
+                    Xin chào, Admin1
+                    <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
+                </div>
             </div>
 
-            <button class="btn-add"><img src="images/add-client.png" width="20px" height="width">Thêm khách hàng</button>
+            <div class="controls">
+                <button class="btn-add"><img src="images/add-client.png" width="20px" height="width">Thêm khách hàng</button>
+                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm khách hàng..." />
+            </div>
             
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Họ tên</th>
-                            <th>Email</th>
-                            <th>Số điện thoại</th>
+                            <th style="min-width: 250px;">Họ tên</th>
+                            <th style="min-width: 150px;">Email</th>
+                            <th style="min-width: 200px;">Số điện thoại</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>
                         </tr>

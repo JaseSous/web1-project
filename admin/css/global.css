@@ -233,14 +233,6 @@ body {
     font-weight: 700;
 }
 
-.content-panel .header input {
-    margin-right: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-}
-
 @media screen and (max-height: 200px) {
     .sidebar .sidebar-title {
         display: none;
