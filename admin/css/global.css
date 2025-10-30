@@ -248,4 +248,8 @@ body {
     .sidebar .menu-panel {
         margin-top: 0px;
     }
+
+    .content-panel .header {
+        display: none;
+    }
 }
