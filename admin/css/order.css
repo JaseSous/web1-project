@@ -175,6 +175,8 @@
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+
+    overflow-x: auto;
 }
 
 .content-panel .order-detail h3 {
@@ -182,7 +184,7 @@
     color: #333;
 }
 
-.content-panel .order-info {
+.content-panel .order-detail .order-info {
     margin-bottom: 10px;
     line-height: 1.8;
 }
