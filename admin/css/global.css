@@ -180,8 +180,20 @@ body {
     margin-top: 0px;
 }
 
+.sidebar .menu-panel .logout {
+    background-color: #743333;
+
+    transition: 0.2s ease;
+}
+
+.sidebar .menu-panel .logout:hover {
+    background-color: #9a4e4e;
+    
+    transition: 0.2s ease;
+}
+
 .sidebar .menu-panel input:checked~.submenu {
-    height: calc(40px * 3);
+    height: calc(40px * 4);
 
     transition: 0.2s ease;
 }
