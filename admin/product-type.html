@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Quản lý tồn kho</title>
+        <title>Admin | Quản lý loại sản phẩm</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/inventory.css">
+        <link rel="stylesheet" href="css/product-type.css">
     </head>
 
     <body>
@@ -26,7 +26,7 @@
                     Bảng thống kê
                 </a>
                 
-                <a href="clients.html">
+                <a href="">
                     <img src="images/customers.png">
                     Quản lý khách hàng
                 </a>
@@ -40,7 +40,7 @@
                 </label>
                 
                 <div class="submenu">
-                    <a href="product-type.html">
+                    <a href="">
                         <img src="images/product-type.png">
                         Quản lý loại sản phẩm
                     </a>
@@ -65,7 +65,7 @@
                     Quản lý đơn hàng
                 </a>
                 
-                <a href="">
+                <a href="inventory.html">
                     <img src="images/inventory-management.png">
                     Quản lý tồn kho
                 </a>
@@ -74,79 +74,72 @@
             
         <div class="content-panel">
             <div class="header">
-                <h1>Quản lý tồn kho</h1>
+                <h1>Quản lý khách hàng</h1>
                 <div class="admin-profile">
                     Xin chào, Admin1
                     <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
                 </div>
             </div>
 
-            <div class="note">
-                💡 <span style="font-weight: bold;">Cảnh báo:</span> Sản phẩm có <span style="color: #e84118; background-color: #ffe6e6;">nền màu đỏ nhạt</span> là sắp hết hàng <i>(tồn < 5)</i>
+            <div class="controls">
+                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm loại sản phẩm..." />
+                <button class="btn-add"><img src="images/product-type-add.png" width="20px" height="width">Thêm loại sản phẩm</button>
             </div>
             
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Mã SP</th>
-                            <th>Tên sản phẩm</th>
-                            <th>Loại</th>
-                            <th>Tồn đầu kỳ</th>
-                            <th>Nhập</th>
-                            <th>Xuất</th>
-                            <th>Tồn cuối</th>
+                            <th>Mã loại</th>
+                            <th>Tên loại sản phẩm</th>
+                            <th>Mô tả</th>
                             <th>Trạng thái</th>
-                            <th>Chi tiết</th>
+                            <th>Hành động</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>SP001</td>
-                            <td>Áo thun nam cổ tròn</td>
-                            <td>Áo thun</td>
-                            <td>12</td>
-                            <td>8</td>
-                            <td>10</td>
-                            <td>10</td>
-                            <td>Đủ hàng</td>
-                            <td><button class="btn btn-view">Xem</button></td>
-                        </tr>
-                        <tr class="low-stock">
-                            <td>SP002</td>
-                            <td>Quần short kaki</td>
-                            <td>Quần</td>
-                            <td>5</td>
-                            <td>2</td>
-                            <td>4</td>
-                            <td>3</td>
-                            <td>Sắp hết hàng</td>
-                            <td><button class="btn btn-view">Xem</button></td>
+                            <td>LSP01</td>
+                            <td>Áo Nam</td>
+                            <td>Các loại áo dành cho nam giới</td>
+                            <td style="color: green; font-weight: 600;">Hiển thị</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Ẩn</button>
+                            </td>
                         </tr>
                         <tr>
-                            <td>SP003</td>
-                            <td>Giày sneaker trắng</td>
-                            <td>Giày</td>
-                            <td>20</td>
-                            <td>10</td>
-                            <td>5</td>
-                            <td>25</td>
-                            <td>Đủ hàng</td>
-                            <td><button class="btn btn-view">Xem</button></td>
+                            <td>LSP02</td>
+                            <td>Quần Nữ</td>
+                            <td>Các loại quần thời trang nữ</td>
+                            <td style="color: green; font-weight: 600;">Hiển thị</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Ẩn</button>
+                            </td>
                         </tr>
-                        <tr class="low-stock">
-                            <td>SP004</td>
-                            <td>Nón lưỡi trai đen</td>
-                            <td>Phụ kiện</td>
-                            <td>6</td>
-                            <td>0</td>
-                            <td>3</td>
-                            <td>3</td>
-                            <td>Sắp hết hàng</td>
-                            <td><button class="btn btn-view">Xem</button></td>
+                        <tr>
+                            <td>LSP03</td>
+                            <td>Áo Khoác</td>
+                            <td>Áo khoác thời trang cho mọi giới tính</td>
+                            <td style="color: red; font-weight: 600;">Ẩn</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Hiện</button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+                
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">»</a>
             </div>
         </div>
     </body>
