@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | Quản lý giá bán</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/pricing.css">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <img src="images/logo.png">
+                <div>
+                    <h1>Vogue Shop</h1>
+                    <hr>
+                    <h2>Trang quản lý</h2>
+                </div>
+            </div>
+
+            <div class="menu-panel">
+                <a href="dashboard.html">
+                    <img src="images/dashboard.png">
+                    Bảng thống kê
+                </a>
+                
+                <a href="clients.html">
+                    <img src="images/customers.png">
+                    Quản lý khách hàng
+                </a>
+                
+                <!-- product -->
+                <input type="checkbox" id="toggle-product-submenu" style="display: none;">
+                <label for="toggle-product-submenu">
+                    <img src="images/product-management.png">
+                    Quản lý sản phẩm
+                    <img class="arrow" src="images/arrow-down.png">
+                </label>
+                
+                <div class="submenu">
+                    <a href="product-type.html">
+                        <img src="images/product-type.png">
+                        Quản lý loại sản phẩm
+                    </a>
+                    <a href="product-category.html">
+                        <img src="images/category.png">
+                        Quản lý danh mục
+                    </a>
+                    <a href="import.html">
+                        <img src="images/import-goods.png">
+                        Nhập sản phẩm
+                    </a>
+                </div>
+                <!-- end -->
+                
+                <a href="">
+                    <img src="images/pricing.png">
+                    Quản lý giá bán
+                </a>
+                
+                <a href="order.html">
+                    <img src="images/order.png">
+                    Quản lý đơn hàng
+                </a>
+                
+                <a href="inventory.html">
+                    <img src="images/inventory-management.png">
+                    Quản lý tồn kho
+                </a>
+            </div>
+        </div>
+            
+        <div class="content-panel">
+            <div class="header">
+                <h1>Quản lý giá bán</h1>
+                <div class="admin-profile">
+                    Xin chào, Admin1
+                    <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+        
+            <h2 style="color: #f7f6f2; background-color: #11212d; padding: 10px 20px; padding-bottom: 0px; width: fit-content; border-radius: 10px 10px 0px 0px;">Nhập / sửa tỷ lệ lợi nhuận</h2>
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Tên loại sản phẩm">
+                    <input type="number" min="0" placeholder="% Lợi nhuận">
+                    <button type="button">💾 Lưu</button>
+                </form>
+            </div>
+        
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <h2 style="text-align: center; color: #f7f6f2; background-color: #2f3640; padding: 10px 20px; width: auto;">Tỷ lệ lợi nhuận theo loại sản phẩm</h2>
+                        <tr>
+                            <th>Mã loại</th>
+                            <th>Loại sản phẩm</th>
+                            <th>% Lợi nhuận</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>L01</td>
+                            <td>Áo</td>
+                            <td>30%</td>
+                            <td>
+                                <button class="action-btn edit">Sửa</button>
+                                <button class="action-btn delete">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>L02</td>
+                            <td>Quần</td>
+                            <td>25%</td>
+                            <td>
+                                <button class="action-btn edit">Sửa</button>
+                                <button class="action-btn delete">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <h2 style="text-align: center; color: #f7f6f2; background-color: #2f3640; padding: 10px 20px; width: auto;">Chi tiết giá sản phẩm</h2>
+                        <tr>
+                            <th>Mã SP</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Loại</th>
+                            <th>Giá vốn (₫)</th>
+                            <th>% Lợi nhuận</th>
+                            <th>Giá bán (₫)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SP01</td>
+                            <td>Áo thun Nam</td>
+                            <td>Áo</td>
+                            <td>120,000</td>
+                            <td>30%</td>
+                            <td>156,000</td>
+                        </tr>
+                        <tr>
+                            <td>SP02</td>
+                            <td>Quần Jean Nữ</td>
+                            <td>Quần</td>
+                            <td>250,000</td>
+                            <td>25%</td>
+                            <td>312,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

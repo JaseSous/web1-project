@@ -1,0 +1,97 @@
+.content-panel .form-container {
+    background: #11212d;
+    padding: 20px;
+    border-radius: 0px 10px 10px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px #0000001a;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.content-panel .form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content-panel .form-container form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.content-panel .form-container form button {
+    background-color: #30833b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content-panel .form-container form button:hover {
+    background-color: rgb(26, 65, 46);
+}
+
+.content-panel .table-container {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    min-height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.content-panel .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-panel .table-container th,
+.content-panel .table-container td {
+    text-align: center;
+    padding: 12px;
+}
+
+.content-panel .table-container th {
+    background-color: #2f3640;
+    color: white;
+}
+
+.content-panel .table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-panel .table-container tbody tr:hover {
+    background-color: #dcdde1;
+    transition: 0.2s;
+}
+
+.content-panel .table-container .action-btn {
+    border: none;
+    padding: 6px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.content-panel .table-container .edit {
+    background: #3498db;
+}
+
+.content-panel .table-container .delete {
+    background: #e74c3c;
+}
+
+.content-panel .table-container .action-btn:hover {
+    opacity: 0.9;
+}
