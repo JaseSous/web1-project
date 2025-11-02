@@ -27,7 +27,13 @@ header {
   display: flex;
   margin-left: 10px;
   align-items: center;
+  gap: 15px;
   flex: 0 0 auto;
+}
+
+.header-left img {
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .header-center {
