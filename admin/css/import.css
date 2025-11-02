@@ -1,0 +1,179 @@
+.content-panel .form-container {
+    background: #11212d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-panel .form-container h2 {
+    margin-bottom: 15px;
+    color: #f7f6f2;
+}
+
+.content-panel .form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content-panel .form-container form input,
+.content-panel .form-container form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 180px;
+}
+
+.content-panel .form-container form button {
+    background-color: #30833b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content-panel .form-container form button:hover {
+    background-color: rgb(26, 65, 46);
+}
+
+.content-panel .search-box {
+    width: 300px;
+    height: 35px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.content-panel .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.content-panel .btn-add:hover {
+    background-color: rgb(26, 65, 46);
+    transform: scale(1.03);
+}
+
+.content-panel .table-container {
+    width: 100%;
+    height: calc(100% - 210px);
+    min-height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.content-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-panel th,
+.content-panel td {
+    text-align: left;
+    padding: 12px;
+}
+
+.content-panel th {
+    background-color: black;
+    color: white;
+}
+
+.content-panel tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-panel tbody tr:hover {
+    background-color: #dcdde1;
+    transition: 0.2s;
+}
+
+.content-panel .table-container .status {
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+    color: white;
+    margin-block: 30px;
+}
+
+.content-panel .table-container .pending {
+    background: #f39c12;
+    color: white;
+}
+
+.content-panel .table-container .done {
+    background: #27ae60;
+    color: white;
+}
+
+.content-panel .table-container .action-btn {
+    border: none;
+    padding: 6px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.content-panel .table-container .edit {
+    background: #3498db;
+}
+
+.content-panel .table-container .complete {
+    background: #2ecc71;
+}
+
+.content-panel .table-container .delete {
+    background: #e74c3c;
+}
+
+.content-panel .table-container .action-btn:hover {
+    opacity: 0.9;
+}
+
+.content-panel .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.content-panel .pagination a {
+    border: none;
+    background-color: #555;
+    border-radius: 8px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.content-panel .pagination a:hover {
+    background-color: #000000;
+    transform: scale(1.12);
+}
+
+.content-panel .pagination a.active {
+    background-color: rgb(0, 0, 0);
+}

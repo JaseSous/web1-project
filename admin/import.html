@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | Quản lý nhập sản phẩm</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/import.css">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <img src="images/logo.png">
+                <div>
+                    <h1>Vogue Shop</h1>
+                    <hr>
+                    <h2>Trang quản lý</h2>
+                </div>
+            </div>
+
+            <div class="menu-panel">
+                <a href="dashboard.html">
+                    <img src="images/dashboard.png">
+                    Bảng thống kê
+                </a>
+                
+                <a href="">
+                    <img src="images/customers.png">
+                    Quản lý khách hàng
+                </a>
+                
+                <!-- product -->
+                <input type="checkbox" id="toggle-product-submenu" style="display: none;">
+                <label for="toggle-product-submenu">
+                    <img src="images/product-management.png">
+                    Quản lý sản phẩm
+                    <img class="arrow" src="images/arrow-down.png">
+                </label>
+                
+                <div class="submenu">
+                    <a href="">
+                        <img src="images/product-type.png">
+                        Quản lý loại sản phẩm
+                    </a>
+                    <a href="">
+                        <img src="images/category.png">
+                        Quản lý danh mục
+                    </a>
+                    <a href="">
+                        <img src="images/import-goods.png">
+                        Nhập sản phẩm
+                    </a>
+                </div>
+                <!-- end -->
+                
+                <a href="">
+                    <img src="images/pricing.png">
+                    Quản lý giá bán
+                </a>
+                
+                <a href="">
+                    <img src="images/order.png">
+                    Quản lý đơn hàng
+                </a>
+                
+                <a href="inventory.html">
+                    <img src="images/inventory-management.png">
+                    Quản lý tồn kho
+                </a>
+            </div>
+        </div>
+            
+        <div class="content-panel">
+            <div class="header">
+                <h1>Quản lý nhập sản phẩm</h1>
+                <div class="admin-profile">
+                    Xin chào, Admin1
+                    <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h2>Thêm phiếu nhập hàng</h2>
+                <form>
+                    <input type="date" placeholder="Ngày nhập">
+                    <input type="text" placeholder="Tên sản phẩm">
+                    <input type="number" step="1000" min="0" placeholder="Giá nhập (₫)">
+                    <input type="number" min="0" placeholder="Số lượng">
+                    <button type="button">➕ Thêm phiếu</button>
+                </form>
+            </div>
+
+            <div class="controls">
+                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm phiếu nhập hàng..." />
+            </div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã phiếu</th>
+                            <th>Ngày nhập</th>
+                            <th>Sản phẩm</th>
+                            <th>Giá nhập</th>
+                            <th>Số lượng</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PN001</td>
+                            <td>2025-10-26</td>
+                            <td>Áo Thun Nam</td>
+                            <td>120,000₫</td>
+                            <td>50</td>
+                            <td><span class="status done">Hoàn thành</span></td>
+                            <td>
+                                <button class="action-btn edit" disabled>Sửa</button>
+                                <button class="action-btn complete" disabled>Hoàn thành</button>
+                                <button class="action-btn delete">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PN002</td>
+                            <td>2025-10-27</td>
+                            <td>Quần Jean Nữ</td>
+                            <td>250,000₫</td>
+                            <td>30</td>
+                            <td><span class="status pending">Chờ xử lý</span></td>
+                            <td>
+                                <button class="action-btn edit">Sửa</button>
+                                <button class="action-btn complete">Hoàn thành</button>
+                                <button class="action-btn delete">Xóa</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PN003</td>
+                            <td>2025-10-28</td>
+                            <td>Giày Thể Thao</td>
+                            <td>450,000₫</td>
+                            <td>20</td>
+                            <td><span class="status pending">Chờ xử lý</span></td>
+                            <td>
+                                <button class="action-btn edit">Sửa</button>
+                                <button class="action-btn complete">Hoàn thành</button>
+                                <button class="action-btn delete">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">»</a>
+            </div>
+        </div>
+    </body>
+</html>
