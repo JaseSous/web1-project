@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Bảng thống kê</title>
+        <title>Admin | Quản lý tồn kho</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/inventory.css">
     </head>
 
     <body>
@@ -84,53 +84,79 @@
             
         <div class="content-panel">
             <div class="header">
-                <h1>Bảng thống kê</h1>
+                <h1>Quản lý tồn kho</h1>
                 <div class="admin-profile">
                     Xin chào, Admin1
                     <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
                 </div>
             </div>
 
-            <div class="cards">
-                <div class="card">
-                    <h3>Doanh thu hôm nay 💸</h3>
-                    <p>36,000,000₫</p>
-                </div>
-
-                <div class="card">
-                    <h3>Đơn hàng mới 🛒</h3>
-                    <p>36</p>
-                </div>
-
-                <div class="card">
-                    <h3>Sản phẩm tồn kho 📦</h3>
-                    <p>128</p>
-                </div>
+            <div class="note">
+                💡 <span style="font-weight: bold;">Cảnh báo:</span> Sản phẩm có <span style="color: #e84118; background-color: #ffe6e6;">nền màu đỏ nhạt</span> là sắp hết hàng <i>(tồn < 5)</i>
             </div>
-
-            <div class="chart-container">
-                <h3>📊 Biểu đồ doanh thu 7 ngày gần đây</h3>
             
-                <div class="chart-wrapper">
-                    <div class="giatri">
-                        <span>0</span>
-                        <span>10tr</span>
-                        <span>20tr</span>
-                        <span>30tr</span>
-                        <span>40tr</span>
-                        <span>50tr</span>
-                    </div>
-            
-                    <div class="bar-chart">
-                        <div class="bar" style="height: 50%;" title="Thứ 2 - 25tr"><span>T2</span></div>
-                        <div class="bar" style="height: 60%;" title="Thứ 3 - 30tr"><span>T3</span></div>
-                        <div class="bar" style="height: 56%;" title="Thứ 4 - 28tr"><span>T4</span></div>
-                        <div class="bar" style="height: 70%;" title="Thứ 5 - 35tr"><span>T5</span></div>
-                        <div class="bar" style="height: 80%;" title="Thứ 6 - 40tr"><span>T6</span></div>
-                        <div class="bar" style="height: 90%;" title="Thứ 7 - 45tr"><span>T7</span></div>
-                        <div class="bar" style="height: 75%;" title="CN - 38tr"><span>CN</span></div>
-                    </div>
-                </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã SP</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Loại</th>
+                            <th>Tồn đầu kỳ</th>
+                            <th>Nhập</th>
+                            <th>Xuất</th>
+                            <th>Tồn cuối</th>
+                            <th>Trạng thái</th>
+                            <th>Chi tiết</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SP001</td>
+                            <td>Áo thun nam cổ tròn</td>
+                            <td>Áo thun</td>
+                            <td>12</td>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>10</td>
+                            <td>Đủ hàng</td>
+                            <td><button class="btn btn-view">Xem</button></td>
+                        </tr>
+                        <tr class="low-stock">
+                            <td>SP002</td>
+                            <td>Quần short kaki</td>
+                            <td>Quần</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>Sắp hết hàng</td>
+                            <td><button class="btn btn-view">Xem</button></td>
+                        </tr>
+                        <tr>
+                            <td>SP003</td>
+                            <td>Giày sneaker trắng</td>
+                            <td>Giày</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>25</td>
+                            <td>Đủ hàng</td>
+                            <td><button class="btn btn-view">Xem</button></td>
+                        </tr>
+                        <tr class="low-stock">
+                            <td>SP004</td>
+                            <td>Nón lưỡi trai đen</td>
+                            <td>Phụ kiện</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>Sắp hết hàng</td>
+                            <td><button class="btn btn-view">Xem</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </body>

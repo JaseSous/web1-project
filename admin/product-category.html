@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | Quản lý danh mục sản phẩm</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/product-category.css">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <img src="images/logo.png">
+                <div>
+                    <h1>Vogue Shop</h1>
+                    <hr>
+                    <h2>Trang quản lý</h2>
+                </div>
+            </div>
+
+            <div class="menu-panel">
+                <a href="dashboard.html">
+                    <img src="images/dashboard.png">
+                    Bảng thống kê
+                </a>
+                
+                <a href="clients.html">
+                    <img src="images/customers.png">
+                    Quản lý khách hàng
+                </a>
+                
+                <!-- product -->
+                <input type="checkbox" id="toggle-product-submenu" style="display: none;">
+                <label for="toggle-product-submenu">
+                    <img src="images/product-management.png">
+                    Quản lý sản phẩm
+                    <img class="arrow" src="images/arrow-down.png">
+                </label>
+                
+                <div class="submenu">
+                    <a href="product-type.html">
+                        <img src="images/product-type.png">
+                        Quản lý loại sản phẩm
+                    </a>
+                    <a href="product-category.html">
+                        <img src="images/category.png">
+                        Quản lý danh mục
+                    </a>
+                    <a href="import.html">
+                        <img src="images/import-goods.png">
+                        Nhập sản phẩm
+                    </a>
+                    <a href="pricing.html">
+                        <img src="images/pricing.png">
+                        Quản lý giá bán
+                    </a>
+                </div>
+                <!-- end -->
+                
+                
+                <a href="order.html">
+                    <img src="images/order.png">
+                    Quản lý đơn hàng
+                </a>
+                
+                <a href="inventory.html">
+                    <img src="images/inventory-management.png">
+                    Quản lý tồn kho
+                </a>
+
+                <a href="settings.html">
+                    <img src="images/admin-settings.png">
+                    Cài đặt
+                </a>
+
+                <a class="logout" href="../main.html">
+                    <img src="images/logout.png">
+                    Đăng xuất
+                </a>
+            </div>
+        </div>
+            
+        <div class="content-panel">
+            <div class="header">
+                <h1>Quản lý danh mục sản phẩm</h1>
+                <div class="admin-profile">
+                    Xin chào, Admin1
+                    <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+
+            <div class="controls">
+                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm sản phẩm..." />
+                <button class="btn-add"><img src="images/product-type-add.png" width="20px" height="width">Thêm sản phẩm</button>
+            </div>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Danh mục</th>
+                            <th>Giá</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SP001</td>
+                            <td><img src="image/Tshirt.jpg" alt="áo thun" /></td>
+                            <td>Áo Thun</td>
+                            <td>Áo nam</td>
+                            <td>199,000₫</td>
+                            <td class="trangthai conhang">Còn hàng</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Ẩn</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SP002</td>
+                            <td><img src="image/jean.jpg" alt="jeans" /></td>
+                            <td>Quần jeans nữ</td>
+                            <td>Quần nữ</td>
+                            <td>350,000₫</td>
+                            <td class="trangthai hethang">Hết hàng</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Ẩn</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SP003</td>
+                            <td><img src="image/bomber.jpg" alt="bomber" /></td>
+                            <td>Áo khoác bomber</td>
+                            <td>Áo khoác</td>
+                            <td>450,000₫</td>
+                            <td class="trangthai conhang">Còn hàng</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Ẩn</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">»</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+.content-panel .note {
+    background: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.content-panel .table-container {
+    width: 100%;
+    height: calc(100% - 210px);
+    min-height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.content-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-panel th,
+.content-panel td {
+    text-align: left;
+    padding: 12px;
+}
+
+.content-panel th {
+    background-color: black;
+    color: white;
+}
+
+.content-panel th:nth-child(4),
+.content-panel td:nth-child(4),
+.content-panel th:nth-child(5),
+.content-panel td:nth-child(5),
+.content-panel th:nth-child(6),
+.content-panel td:nth-child(6),
+.content-panel th:nth-child(7),
+.content-panel td:nth-child(7) {
+    text-align: center;
+    padding: 12px;
+}
+
+.content-panel th:nth-child(9) {
+    text-align: center;
+    padding: 12px;
+}
+
+.content-panel td:nth-child(9) {
+    display: flex;
+    justify-content: center;
+}
+
+.content-panel tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-panel .low-stock {
+    background-color: #ffe6e6 !important;
+    color: #e84118;
+    font-weight: 600;
+}
+
+.content-panel .btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.content-panel .btn-view {
+    background-color: #00a8ff;
+}
+
+.content-panel .btn-view:hover {
+    opacity: 0.85;
+}

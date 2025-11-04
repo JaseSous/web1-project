@@ -1,0 +1,190 @@
+.content-panel .filter-section {
+    background: #11212d;
+    padding: 20px;
+    border-radius: 0px 10px 10px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px #0000001a;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.content-panel .filter-section div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content-panel .filter-section div label {
+    color: #f7f6f2;
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto;
+    margin-right: 10px;
+    text-align: left;
+}
+
+
+.content-panel .filter-section input,
+.content-panel .filter-section select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 150px;
+}
+
+.content-panel .filter-section button {
+    background-color: #30833b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content-panel .filter-section button:hover {
+    background-color: rgb(26, 65, 46);
+    transform: scale(1.03);
+}
+
+.content-panel .table-container {
+    width: 100%;
+    height: auto;
+    max-height: calc(100% - 210px);
+    min-height: 200px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.content-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-panel th,
+.content-panel td {
+    text-align: center;
+    padding: 12px;
+}
+
+.content-panel th {
+    background-color: black;
+    color: white;
+}
+
+.content-panel tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content-panel tbody tr:hover {
+    background-color: #dcdde1;
+    transition: 0.2s;
+}
+
+.content-panel .table-container .status {
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.content-panel .table-container .new {
+    background: #3498db;
+}
+
+.content-panel .table-container .processing {
+    background: #f39c12;
+}
+
+.content-panel .table-container .delivered {
+    background: #27ae60;
+}
+
+.content-panel .table-container .canceled {
+    background: #e74c3c;
+}
+
+.content-panel .table-container .btn {
+    border: none;
+    padding: 6px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.content-panel .table-container .view {
+    background: #2980b9;
+}
+
+.content-panel .table-container .update {
+    background: #2ecc71;
+}
+
+.content-panel .table-container .delete {
+    background: #e74c3c;
+}
+
+.content-panel .table-container .btn:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.content-panel .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.content-panel .pagination a {
+    border: none;
+    background-color: #555;
+    border-radius: 8px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.content-panel .pagination a:hover {
+    background-color: #000000;
+    transform: scale(1.12);
+}
+
+.content-panel .pagination a.active {
+    background-color: rgb(0, 0, 0);
+}
+
+.content-panel .order-detail {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+
+    overflow-x: auto;
+}
+
+.content-panel .order-detail h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content-panel .order-detail .order-info {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}

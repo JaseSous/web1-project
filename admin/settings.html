@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Bảng thống kê</title>
+        <title>Admin | Cài đặt admin</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/settings.css">
     </head>
 
     <body>
@@ -19,18 +19,18 @@
                     <h2>Trang quản lý</h2>
                 </div>
             </div>
-
+    
             <div class="menu-panel">
                 <a href="dashboard.html">
                     <img src="images/dashboard.png">
                     Bảng thống kê
                 </a>
-                
+    
                 <a href="clients.html">
                     <img src="images/customers.png">
                     Quản lý khách hàng
                 </a>
-                
+    
                 <!-- product -->
                 <input type="checkbox" id="toggle-product-submenu" style="display: none;">
                 <label for="toggle-product-submenu">
@@ -38,7 +38,7 @@
                     Quản lý sản phẩm
                     <img class="arrow" src="images/arrow-down.png">
                 </label>
-                
+    
                 <div class="submenu">
                     <a href="product-type.html">
                         <img src="images/product-type.png">
@@ -58,80 +58,100 @@
                     </a>
                 </div>
                 <!-- end -->
-                
-                
+    
+    
                 <a href="order.html">
                     <img src="images/order.png">
                     Quản lý đơn hàng
                 </a>
-                
+    
                 <a href="inventory.html">
                     <img src="images/inventory-management.png">
                     Quản lý tồn kho
                 </a>
-
+    
                 <a href="settings.html">
                     <img src="images/admin-settings.png">
                     Cài đặt
                 </a>
-
+    
                 <a class="logout" href="../main.html">
                     <img src="images/logout.png">
                     Đăng xuất
                 </a>
             </div>
         </div>
-            
+    
         <div class="content-panel">
             <div class="header">
-                <h1>Bảng thống kê</h1>
+                <h1>Cài đặt</h1>
                 <div class="admin-profile">
                     Xin chào, Admin1
                     <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
                 </div>
             </div>
-
-            <div class="cards">
-                <div class="card">
-                    <h3>Doanh thu hôm nay 💸</h3>
-                    <p>36,000,000₫</p>
-                </div>
-
-                <div class="card">
-                    <h3>Đơn hàng mới 🛒</h3>
-                    <p>36</p>
-                </div>
-
-                <div class="card">
-                    <h3>Sản phẩm tồn kho 📦</h3>
-                    <p>128</p>
-                </div>
-            </div>
-
-            <div class="chart-container">
-                <h3>📊 Biểu đồ doanh thu 7 ngày gần đây</h3>
-            
-                <div class="chart-wrapper">
-                    <div class="giatri">
-                        <span>0</span>
-                        <span>10tr</span>
-                        <span>20tr</span>
-                        <span>30tr</span>
-                        <span>40tr</span>
-                        <span>50tr</span>
+    
+            <div class="settings-container">
+                <!-- Cài đặt tài khoản -->
+                <div class="setting-section">
+                    <h2>🔐 Cài đặt tài khoản</h2>
+                    <div class="setting-item">
+                        <label>Tên quản trị viên:</label>
+                        <input type="text" value="Admin1">
                     </div>
-            
-                    <div class="bar-chart">
-                        <div class="bar" style="height: 50%;" title="Thứ 2 - 25tr"><span>T2</span></div>
-                        <div class="bar" style="height: 60%;" title="Thứ 3 - 30tr"><span>T3</span></div>
-                        <div class="bar" style="height: 56%;" title="Thứ 4 - 28tr"><span>T4</span></div>
-                        <div class="bar" style="height: 70%;" title="Thứ 5 - 35tr"><span>T5</span></div>
-                        <div class="bar" style="height: 80%;" title="Thứ 6 - 40tr"><span>T6</span></div>
-                        <div class="bar" style="height: 90%;" title="Thứ 7 - 45tr"><span>T7</span></div>
-                        <div class="bar" style="height: 75%;" title="CN - 38tr"><span>CN</span></div>
+                    <div class="setting-item">
+                        <label>Email đăng nhập:</label>
+                        <input type="email" value="admin1@example.com">
+                    </div>
+                    <div class="setting-item">
+                        <label>Ngôn ngữ hiển thị:</label>
+                        <select>
+                            <option>Tiếng Việt</option>
+                            <option>English</option>
+                        </select>
                     </div>
                 </div>
+    
+                <!-- Cài đặt giao diện -->
+                <div class="setting-section">
+                    <h2>🎨 Giao diện hiển thị</h2>
+                    <div class="setting-item">
+                        <label>Chế độ tối:</label>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle" checked>
+                            <span class="darkModeSlider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>Màu chủ đạo:</label>
+                        <select>
+                            <option>Xanh navy (mặc định)</option>
+                            <option>Xanh lá</option>
+                            <option>Cam</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <!-- Cài đặt thông báo -->
+                <div class="setting-section">
+                    <h2>🔔 Thông báo</h2>
+                    <div class="setting-item">
+                        <label>Nhận thông báo email:</label>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>Nhận thông báo đơn hàng mới:</label>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+    
+                <button class="btn-save">💾 Lưu thay đổi</button>
             </div>
-        </div>
     </body>
 </html>

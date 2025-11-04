@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Bảng thống kê</title>
+        <title>Admin | Quản lý loại sản phẩm</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/product-type.css">
     </head>
 
     <body>
@@ -84,53 +84,72 @@
             
         <div class="content-panel">
             <div class="header">
-                <h1>Bảng thống kê</h1>
+                <h1>Quản lý loại sản phẩm</h1>
                 <div class="admin-profile">
                     Xin chào, Admin1
                     <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
                 </div>
             </div>
 
-            <div class="cards">
-                <div class="card">
-                    <h3>Doanh thu hôm nay 💸</h3>
-                    <p>36,000,000₫</p>
-                </div>
-
-                <div class="card">
-                    <h3>Đơn hàng mới 🛒</h3>
-                    <p>36</p>
-                </div>
-
-                <div class="card">
-                    <h3>Sản phẩm tồn kho 📦</h3>
-                    <p>128</p>
-                </div>
+            <div class="controls">
+                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm loại sản phẩm..." />
+                <button class="btn-add"><img src="images/product-type-add.png" width="20px" height="width">Thêm loại sản phẩm</button>
             </div>
-
-            <div class="chart-container">
-                <h3>📊 Biểu đồ doanh thu 7 ngày gần đây</h3>
             
-                <div class="chart-wrapper">
-                    <div class="giatri">
-                        <span>0</span>
-                        <span>10tr</span>
-                        <span>20tr</span>
-                        <span>30tr</span>
-                        <span>40tr</span>
-                        <span>50tr</span>
-                    </div>
-            
-                    <div class="bar-chart">
-                        <div class="bar" style="height: 50%;" title="Thứ 2 - 25tr"><span>T2</span></div>
-                        <div class="bar" style="height: 60%;" title="Thứ 3 - 30tr"><span>T3</span></div>
-                        <div class="bar" style="height: 56%;" title="Thứ 4 - 28tr"><span>T4</span></div>
-                        <div class="bar" style="height: 70%;" title="Thứ 5 - 35tr"><span>T5</span></div>
-                        <div class="bar" style="height: 80%;" title="Thứ 6 - 40tr"><span>T6</span></div>
-                        <div class="bar" style="height: 90%;" title="Thứ 7 - 45tr"><span>T7</span></div>
-                        <div class="bar" style="height: 75%;" title="CN - 38tr"><span>CN</span></div>
-                    </div>
-                </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã loại</th>
+                            <th>Tên loại sản phẩm</th>
+                            <th>Mô tả</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LSP01</td>
+                            <td>Áo Nam</td>
+                            <td>Các loại áo dành cho nam giới</td>
+                            <td style="color: green; font-weight: 600;">Hiển thị</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Ẩn</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LSP02</td>
+                            <td>Quần Nữ</td>
+                            <td>Các loại quần thời trang nữ</td>
+                            <td style="color: green; font-weight: 600;">Hiển thị</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Ẩn</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LSP03</td>
+                            <td>Áo Khoác</td>
+                            <td>Áo khoác thời trang cho mọi giới tính</td>
+                            <td style="color: red; font-weight: 600;">Ẩn</td>
+                            <td>
+                                <button class="btn btn-edit">Sửa</button>
+                                <button class="btn btn-del">Xóa</button>
+                                <button class="btn btn-an">Hiện</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">»</a>
             </div>
         </div>
     </body>
