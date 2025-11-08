@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <a href="main.html" class="home-link">&lt</a>
+        <a href="main.html" class="home-link" title="Quay về trang chủ"><img src="images/back.png"></a>
         <div class="login-container">
             <div class="login-form">
                 <h1 class="title">ĐĂNG KÝ</h1>
@@ -19,20 +19,28 @@
                 <div>
                     <form action="register-complete" method="post">
                         <label class="login-form-label" for="username">Tên đăng nhập</label>
-                        <input class="login-text-input" type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
+                        <div class="text-input-container">
+                            <input class="login-text-input" type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" required>
+                            <img src="images/username.png">
+                        </div>
                         
                         <label class="login-form-label" for="email">Email</label>
-                        <input class="login-text-input" type="email" id="email" name="email" placeholder="Nhập email" required>
-
-                        <label class="login-form-label" for="fullname">Họ tên</label>
-                        <input class="login-text-input" type="text" id="fullname" name="fullname" placeholder="Nhập họ tên" required>
-
+                        <div class="text-input-container">
+                            <input class="login-text-input" type="email" id="email" name="email" placeholder="Nhập email" required>
+                            <img src="images/email.png">
+                        </div>
 
                         <label class="login-form-label" for="password">Mật khẩu</label>
-                        <input class="login-text-input" type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                        <div class="text-input-container">
+                            <input class="login-text-input" type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                            <img src="images/password.png">
+                        </div>
 
                         <label class="login-form-label" for="confirmpassword">Nhập lại mật khẩu</label>
-                        <input class="login-text-input" type="password" id="confirmpassword" name="confirmpassword" placeholder="Nhập lại mật khẩu" required>
+                        <div class="text-input-container">
+                            <input class="login-text-input" type="password" id="confirmpassword" name="confirmpassword" placeholder="Nhập lại mật khẩu" required>
+                            <img src="images/confirm-password.png">
+                        </div>
 
                         <button class="login-submit-button" type="submit">Đăng ký</button>
                     </form>
@@ -42,11 +50,13 @@
 
                 <p class="external-login-title">Hoặc đăng ký bằng</p>
                 
-                <div class="external-login-container" style="margin-bottom: 25px;">
-                    <a title="Google" href=""><img class="external-login-icon" src="images/google-icon.png"></a>
-                    <a title="Facebook" href=""><img class="external-login-icon" src="images/facebook-logo.png"></a>
-                    <a title="Apple" href=""><img class="external-login-icon" src="images/apple-icon.png"></a>
+                <div class="external-login-container">
+                    <a title="Google" href="#"><img class="external-login-icon" src="images/google-icon.png"></a>
+                    <a title="Facebook" href="#"><img class="external-login-icon" src="images/facebook-logo.png"></a>
+                    <a title="Apple" href="#"><img class="external-login-icon" src="images/apple-icon.png"></a>
                 </div>
+
+                <div class="alt-register-button">Đã có tài khoản? <a href="login.html" class="register-button">Đăng nhập ngay!</a></div>
             </div>
 
             <div class="image-container">
@@ -58,7 +68,7 @@
                 </div>
                  
                 <div style="background-color: rgba(0, 0, 0, 0.5); height: 100px; display: flex; justify-content: center; align-items: center;">
-                    <p style="color: white; text-align: center; font-weight: bold; font-size: 20px;">Đã có tài khoản? <a href="login.html" class="register-button">Đăng nhập ngay!</a></p>
+                    <div style="color: white; text-align: center; font-weight: bold; font-size: 20px;">Đã có tài khoản? <a href="login.html" class="register-button">Đăng nhập ngay!</a></div>
                 </div>
             </div>
         </div>
