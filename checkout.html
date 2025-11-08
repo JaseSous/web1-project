@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Thanh toán sản phẩm</title>
+    <link rel="stylesheet" href="css/checkout.css"/>
+  </head>
+
+  <body class="backgroud">
+    <!-- Thanh điều hướng -->
+    <header style="overflow: visible;">
+      <div class="header-container">
+        <div class="header-left">
+          <h1>Shop Quần Áo</h1>
+        </div>
+
+        <div class="header-center">
+          <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+          <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="header-right">
+          <button class="cart-btn">
+            🛒 Giỏ hàng <span id="cartCount" class="cart-badge">0</span>
+          </button>
+          <button class="login-btn">Đăng nhập</button>
+        </div>
+      </div>
+
+      <nav style="overflow: visible;">
+        <div class="mega-nav">
+          <div class="mega-item">
+            <a href="javascript:void(0)">ÁO</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>ÁO KHOÁC</h4>
+                <a href="javascript:void(0)">Áo khoác nam</a>
+                <a href="javascript:void(0)">Áo khoác nữ</a>
+                <a href="javascript:void(0)">Áo gió</a>
+              </div>
+              <div class="mega-col">
+                <h4>ÁO THỂ THAO</h4>
+                <a href="javascript:void(0)">Áo chạy bộ</a>
+                <a href="javascript:void(0)">Áo gym</a>
+                <a href="javascript:void(0)">Áo bóng rổ</a>
+              </div>
+              <div class="mega-col">
+                <h4>ÁO THỜI TRANG</h4>
+                <a href="javascript:void(0)">Áo thun</a>
+                <a href="javascript:void(0)">Áo sơ mi</a>
+                <a href="javascript:void(0)">Áo polo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mega-item">
+            <a href="javascript:void(0)">QUẦN</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>QUẦN DÀI</h4>
+                <a href="javascript:void(0)">Quần jean</a>
+                <a href="javascript:void(0)">Quần jogger</a>
+                <a href="javascript:void(0)">Quần tây</a>
+              </div>
+              <div class="mega-col">
+                <h4>QUẦN NGẮN</h4>
+                <a href="javascript:void(0)">Quần short thể thao</a>
+                <a href="javascript:void(0)">Quần short jean</a>
+                <a href="javascript:void(0)">Quần short kaki</a>
+              </div>
+              <div class="mega-col">
+                <h4>PHỤ KIỆN</h4>
+                <a href="javascript:void(0)">Thắt lưng</a>
+                <a href="javascript:void(0)">Vớ / tất</a>
+                <a href="javascript:void(0)">Nón / mũ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mega-item">
+            <a href="javascript:void(0)">GIÀY</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>GIÀY THỂ THAO</h4>
+                <a href="javascript:void(0)">Chạy bộ</a>
+                <a href="javascript:void(0)">Bóng rổ</a>
+                <a href="javascript:void(0)">Bóng đá</a>
+              </div>
+              <div class="mega-col">
+                <h4>GIÀY THỜI TRANG</h4>
+                <a href="javascript:void(0)">Sneaker</a>
+                <a href="javascript:void(0)">Slip-on</a>
+                <a href="javascript:void(0)">Boots</a>
+              </div>
+              <div class="mega-col">
+                <h4>THƯƠNG HIỆU</h4>
+                <a href="javascript:void(0)">Nike</a>
+                <a href="javascript:void(0)">Adidas</a>
+                <a href="javascript:void(0)">Puma</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mega-item">
+            <a href="javascript:void(0)">PHỤ KIỆN</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>BÓNG</h4>
+                <a href="javascript:void(0)">Tennis</a>
+                <a href="javascript:void(0)">Bóng rổ</a>
+                <a href="javascript:void(0)">Bóng đá</a>
+              </div>
+              <div class="mega-col">
+                <h4>TÚI XÁCH & VÍ</h4>
+                <a href="javascript:void(0)">Tote back</a>
+                <a href="javascript:void(0)">Shoulder-back</a>
+                <a href="javascript:void(0)">Clutch (ví cầm tay)</a>
+              </div>
+              <div class="mega-col">
+                <h4>KHÁC</h4>
+                <a href="javascript:void(0)">Vợt Pickleball</a>
+                <a href="javascript:void(0)">Vớ/Tất</a>
+                <a href="javascript:void(0)">Nón/Mũ</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="javascript:void(0)">SALE</a>
+          <a href="javascript:void(0)">TIN TỨC</a>
+          <a href="javascript:void(0)">LIÊN HỆ</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="checkout-container">
+      <!-- Giỏ hàng -->
+      <section class="cart-section">
+        <h2>🛒 Giỏ Hàng Của Bạn</h2>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>Kích thước</th>
+              <th>Màu</th>
+              <th>Số lượng</th>
+              <th>Tổng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Áo Mu</td>
+              <td>149.000đ</td>
+              <td>XL</td>
+              <td>Đỏ</td>
+              <td>
+                <button class="qty-btn">-</button>
+                <input type="number" value="1" min="1" />
+                <button class="qty-btn">+</button>
+              </td>
+              <td>149.000đ</td>
+            </tr>
+            <tr>
+              <td>Áo Mu</td>
+              <td>149.000đ</td>
+              <td>L</td>
+              <td>Đen</td>
+              <td>
+                <button class="qty-btn">-</button>
+                <input type="number" value="1" min="1" />
+                <button class="qty-btn">+</button>
+              </td>
+              <td>149.000đ</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Địa chỉ nhận hàng -->
+      <section class="address-section">
+        <h2>🏠 Địa Chỉ Giao Hàng</h2>
+        <label>
+          <input type="radio" name="address-option" checked />
+          Sử dụng địa chỉ đã lưu :
+          <b>269/43a Phan Huy Ích, Phường 12, Quận Gò Vấp, Thành Phó Hồ Chí Minh</b>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="address-option" id="new-address" />
+          Địa chỉ giao hàng mới:
+        </label>
+        <div class="new-address-fields">
+          <input type="text" placeholder="Họ và tên người nhận " />
+          <input type="text" placeholder="Số điện thoại" />
+          <input type="text" placeholder="Địa chỉ (Số nhà, Đường,...)" />
+          <input type="text" placeholder="Tỉnh/ Thành Phố" />
+          <input type="text" placeholder="Quận/ Huyện" />
+          <input type="text" placeholder="Phường/ Xã" />
+        </div>
+      </section>
+
+      <!-- Chọn phương thức thanh toán -->
+      <section class="payment-section">
+        <h2>💳 Phương Thức Thanh toán</h2>
+        <label><input type="radio" name="payment" checked /> Thanh toán khi nhận hàng</label><br />
+        <label><input type="radio" name="payment" /> Chuyển khoản ngân hàng</label><br />
+        <label><input type="radio" name="payment" /> Dùng ví điện tử (momo, zalopay...)</label><br />
+        <label><input type="radio" name="payment" id="card-option" /> Thanh toán bằng thẻ (tín dụng, visa...)</label>
+
+        <div class="card-payment">
+          <h3>Nhập thông tin thẻ</h3>
+          <input type="text" placeholder="Tên chủ thẻ" />
+          <input type="text" placeholder="Số thẻ(xxxx xxxx xxxx xxxx)" maxlength="19" />
+          <div class="card-flex">
+            <input type="text" placeholder="DD/MM/YYYY" maxlength="10" />
+            <input type="text" placeholder="CVV" maxlength="4" />
+          </div>
+          <label for="loaithe">Chọn loại thẻ thanh toán:</label>
+          <select name="loaithe" id="loaithe">
+            <optgroup label="Thẻ theo chức năng">
+              <option value="debit">Thẻ ghi nợ (Debit Card)</option>
+              <option value="credit">Thẻ tín dụng (Credit Card)</option>
+              <option value="prepaid">Thẻ trả trước (Prepaid Card)</option>
+            </optgroup>
+            <optgroup label="Thẻ theo phạm vi sử dụng">
+              <option value="noidia">Thẻ nội địa</option>
+              <option value="quocte">Thẻ quốc tế (Visa, MaterCard...)</option>
+            </optgroup>
+          </select>
+        </div>
+      </section>
+
+      <!-- Tóm tắt đơn hàng-->
+       <section class="summary-section">
+        <h2>📋 Chi tiết đơn hàng</h2>
+        <p>Tổng tiền hàng: <span>298.000đ</span></p>
+        <p>Tổng tiền phí vận chuyển: <span>30.000</span></p>
+        <hr />
+        <p class="total-line">Tổng thanh toán: <span class="total">328.000đ</span></p>
+
+        <a href="checkout-completed.html">
+          <button class="confirm-btn">Xác nhận mua hàng</button>
+        </a>
+       </section>
+    </main>
+  </body>
+</html>

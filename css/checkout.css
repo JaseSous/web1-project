@@ -1,0 +1,351 @@
+/* ---------- NỀN CHUNG ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #111;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: #222;
+  padding: 15px 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  gap: 15px;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.header-center {
+  display: flex;
+  background-color: #fff;
+  border-radius: 25px;
+  justify-content: center;
+  flex: 1;
+  max-width: 550px;
+  min-width: 100px;
+}
+
+.header-center input {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 15px;
+  background: white;
+  color: #333;
+}
+
+.header-center input::placeholder {
+  color: #999;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 36px;
+  white-space: nowrap;
+}
+
+h2 {
+  margin-left: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav {
+  background: #222;
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  padding: 15px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+/* Mega menu */
+.mega-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mega-item {
+  position: relative;
+  display: inline-block;
+}
+
+.mega-item > a {
+  padding: 6px 10px;
+  display: inline-block;
+}
+
+.mega-panel {
+  display: none;
+  position: absolute; 
+  left: 0;
+  top: 100%;
+  background: #fff;
+  color: #000;
+  min-width: 520px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  padding: 16px 20px;
+  border-radius: 8px;
+  z-index: 20;
+}
+
+.mega-item:hover .mega-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mega-col {
+  padding: 5px;  
+}
+
+.mega-col h4 {
+  margin: 8px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+}
+
+.mega-panel a {
+  display: block;
+  color: #111;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 14px;  
+  transition: color 0.2s ease;
+}
+
+.mega-panel a:hover { 
+  text-decoration: underline;
+  color: #d84226; 
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.search-cart {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-cart input {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 220px;
+}
+
+.search-btn {
+  background: #ffffff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.cart-btn {
+  background: #d84226;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.cart-btn:hover {
+  background: #c23820;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(216, 66, 38, 0.3);
+}
+
+.cart-badge {
+  background: #fff;
+  color: #d84226;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+/* ----- Giỏ hàng -----*/
+.checkout-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+h2{
+    border-left: 5px solid #00205b;
+    padding-left: 10px;
+    margin-top: 0;
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.cart-table th,
+.cart-table td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+.qty-btn {
+    background: #00205b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.qty-btn:hover {
+    background: #001540;   
+}
+.cart-table input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.address-section,
+.payment-section,
+.summary-section {
+    margin-top: 30px;
+}
+.new-address-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.new-address-fields input {
+    flex: 1 1 45%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-payment {
+  display: none;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.card-flex {
+  display: flex;
+  gap: 10px;
+}
+.card-payment input {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+optgroup {
+  font-weight: bold;
+  color: #333;
+}
+
+.summary-section {
+  background: #f3f5f8;
+  padding: 15px;
+  border-radius: 8px;
+}
+.summary-section p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.summary-section .total-line {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #d00;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.total {
+  color: #d00;
+  font-size: 18px;
+  font-weight: bold;
+}
+.confirm-btn {
+  width: 100%;
+  padding: 12px;
+  background: #00205b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.confirm-btn:hover {
+  background: #001540;
+}
