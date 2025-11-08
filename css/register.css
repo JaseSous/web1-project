@@ -24,7 +24,7 @@ body {
 
 .login-container{
     width: 60vw;
-    min-width: 500px;
+    min-width: 350px;
     max-width: 1000px;
     display: flex;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
@@ -35,9 +35,9 @@ body {
 
 .title {
     text-align: center;
-    font-size: 250%;
+    font-size: 40px;
     font-weight: bolder;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .login-container .login-form{
@@ -80,19 +80,42 @@ body {
     font-size: 20px;
 }
 
+.login-container .login-form .text-input-container {
+    position: relative;
+}
+
+.login-container .login-form .text-input-container img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 7px;
+    left: 27px;
+    transition: 0.3s;
+
+    filter: invert(30%);
+}
+
 .login-container .login-form .login-text-input {
     width: calc(100% - 40px);
-    height: 40px;
+    height: 35px;
     padding: 10px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 15px;
     background-color: rgb(240, 240, 240);
+    padding-left: 35px;
 
     transition: 0.3s;
+}
+
+.login-container .login-form .login-text-input:focus ~ img {
+    left: 25px;
+    transition: 0.3s;
+
+    filter: invert(0%);
 }
 
 .login-container .login-form .login-text-input:focus {
@@ -136,11 +159,36 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 25px;
 }
 
 .login-container .external-login-container .external-login-icon {
-    width: 60px;
+    width: 50px;
     height: calc(width);
+}
+
+.login-form .alt-register-button {
+    color: rgb(70, 70, 70);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    display: none;
+}
+
+.login-form .alt-register-button .register-button {
+    color:rgb(40, 40, 40);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-form .alt-register-button .register-button:visited {
+    color:rgb(40, 40, 40);
+}
+
+.login-form .alt-register-button .register-button:hover {
+    color:rgb(107, 107, 107);
+    transition: 0.3s;
 }
 
 .image-container .register-button {
@@ -170,4 +218,14 @@ body {
 .image-container:hover .welcome-hr-bar {
     width: 60%;
     transition: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+    .login-container .image-container {
+        display: none;
+    }
+
+    .login-container .login-form .alt-register-button {
+        display: block;
+    }
 }
