@@ -4,29 +4,35 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/admin-login-thumbnail.jpg");
+    background-size: cover;
 }
 
 .home-link {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+    top: 12px;
+    left: 12px;
     transition: 0.3s;
 }
 
-.home-link:hover {
-    color: #ccc;
-    transition: 0.3s;
+.home-link img {
+    filter: invert(95%);
+    width: 25px;
+    height: 25px;
+    transition: 0.2s ease;
+}
+
+.home-link img:hover {
+    transition: 0.3s ease;
+    filter: invert(65%);
 }
 
 .login-container{
-    width: 60vw;
+    width: 500px;
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 85vw;
     display: flex;
+    flex-direction: column;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.25);
     border-radius: 8px;
     overflow: hidden;
@@ -40,25 +46,7 @@ body {
     margin-top: 50px;
 }
 
-.login-container .login-form{
-    flex: 1.5;
-}
-
-.login-container .image-container{
-    flex: 1;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    background-image: url('../../images/admin-login-thumbnail.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.login-container .login-form .login-hr-bar {
+.login-container .login-hr-bar {
     width: 30%;
     height: 3px;
     margin: 0 auto;
@@ -67,12 +55,12 @@ body {
     transition: 0.3s;
 }
 
-.login-container .login-form:hover .login-hr-bar {
+.login-container:hover .login-hr-bar {
     width: 60%;
     transition: 0.3s;
 }
 
-.login-container .login-form .login-form-label {
+.login-container .login-form-label {
     display: block;
     margin-bottom: 10px;
     margin-inline: 25px;
@@ -80,27 +68,50 @@ body {
     font-size: 20px;
 }
 
-.login-container .login-form .login-text-input {
+.login-container .text-input-container {
+    position: relative;
+}
+
+.login-container .text-input-container img {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 7px;
+    left: 27px;
+    transition: 0.3s;
+    
+    filter: invert(30%);
+}
+
+.login-container .login-text-input {
     width: calc(100% - 40px);
-    height: 40px;
+    height: 35px;
     padding: 10px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 15px;
     background-color: rgb(240, 240, 240);
+    padding-left: 35px;
 
     transition: 0.3s;
 }
 
-.login-container .login-form .login-text-input:focus {
+.login-container .login-text-input:focus ~ img {
+    left: 25px;
+    transition: 0.3s;
+
+    filter: invert(0%);
+}
+
+.login-container .login-text-input:focus {
     width: calc(100% - 35px);
     transition: 0.3s;
 }
 
-.login-container .login-form .login-submit-button {
+.login-container .login-submit-button {
     width: 80%;
     height: 40px;
     padding: 10px;
@@ -115,10 +126,11 @@ body {
     font-weight: bold;
     transition: 0.3s;
 
-    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-bottom: 25px;
 }
 
-.login-container .login-form .login-submit-button:hover {
+.login-container .login-submit-button:hover {
     background-color: rgb(70, 70, 70);
     transition: 0.3s;
 }
