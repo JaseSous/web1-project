@@ -4,6 +4,7 @@ body {
   /* FIX: Đặt nền chung thành TRẮNG */
   background: #fff;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* ---------- HEADER ---------- */
