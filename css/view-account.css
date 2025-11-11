@@ -349,7 +349,7 @@ nav a:hover {
 
 .content-container .profile-card div .avatar-container {
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -360,7 +360,7 @@ nav a:hover {
     transition: ease 0.2s;
 }
 
-.content-container .profile-card div .avatar-container .change-avatar-icon {
+/* .content-container .profile-card div .avatar-container .change-avatar-icon {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -381,7 +381,7 @@ nav a:hover {
 .content-container .profile-card div .avatar-container:hover .change-avatar-icon {
     opacity: 1;
     transition: ease 0.2s;
-}
+} */
 
 .content-container .profile-card .edit-button {
     background-color: #222;
@@ -403,6 +403,7 @@ nav a:hover {
     background-color: #383838;
     transition: ease 0.2s;
 }
+
 .content-container .info-card {
     background-color: white;
     box-shadow: 0px 0px 3px black;
@@ -443,7 +444,7 @@ nav a:hover {
 
     font-size: 15px;
     font-weight: 550;
-    background-color: #ffffff;
+    background-color: #d5d5d5;
     border-radius: 10px;
     padding: 5px 5px;
 }
