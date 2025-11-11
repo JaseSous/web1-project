@@ -347,6 +347,7 @@ nav a:hover {
 }
 
 .product-item {
+  text-decoration: none;
   position: relative;
   text-align: center;
   background: #fff;
@@ -356,6 +357,7 @@ nav a:hover {
   transition: all 0.3s ease;
   width: 100%;
   max-width: 350px;
+  cursor: pointer;
 }
 
 .product-item:hover {
