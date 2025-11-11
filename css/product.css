@@ -632,11 +632,10 @@ nav a:hover {
   gap: 8px;
 }
 
-/* Áp dụng kiểu dáng nút cho tất cả các liên kết trong container */
 .pagination-container a {
     text-decoration: none;
     color: #000;
-    font-size: 15px; /* Giữ nguyên 15px cho các nút số */
+    font-size: 15px;
     font-weight: 500;
     transition: all 0.2s ease;
     background-color: transparent;
@@ -644,7 +643,6 @@ nav a:hover {
     margin: 0;
     min-width: 0;
     text-align: center;
-    /* FIX: Đảm bảo không xuống dòng */
     white-space: nowrap; 
 }
 
