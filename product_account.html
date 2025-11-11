@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vogue Shop</title>
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+  <header style="overflow: visible;">
+    <div class="header-container">
+      <div class="header-left">
+        <a href="main.html"><img src="images/image main/img-logo.png" alt="" width="100px" height="100px"></a><h1>VOGUE SHOP</h1>
+      </div>
+
+      <div class="header-center">
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        <button class="search-btn"><a href="#"><img src="images/image main/img-search.png" alt="" width="20px" height="20px"></a></button>
+      </div>
+
+      <div class="header-right">
+        <button class="cart-btn">🛒 Giỏ hàng <span id="cartCount" class="cart-badge">0</span></button>
+         <a href="#" ><button class="login-btn">Thông tin tài khoản <span><img src="images/img_ava.png" alt="" width="20px" height="20px"></span></button></a>
+      </div>
+    </div>
+
+    <nav style="overflow: visible;">
+      <div class="mega-nav">
+        <div class="mega-item">
+          <a href="javascript:void(0)">ÁO</a>
+          <div class="mega-panel">
+            <div class="mega-col">
+              <h4>ÁO KHOÁC</h4>
+              <a href="javascript:void(0)">Áo khoác nam</a>
+              <a href="javascript:void(0)">Áo khoác nữ</a>
+              <a href="javascript:void(0)">Áo gió</a>
+            </div>
+            <div class="mega-col">
+              <h4>ÁO THỂ THAO</h4>
+              <a href="javascript:void(0)">Áo chạy bộ</a>
+              <a href="javascript:void(0)">Áo gym</a>
+              <a href="javascript:void(0)">Áo bóng rổ</a>
+            </div>
+            <div class="mega-col">
+              <h4>ÁO THỜI TRANG</h4>
+              <a href="javascript:void(0)">Áo thun</a>
+              <a href="javascript:void(0)">Áo sơ mi</a>
+              <a href="javascript:void(0)">Áo polo</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mega-item">
+          <a href="javascript:void(0)">QUẦN</a>
+          <div class="mega-panel">
+            <div class="mega-col">
+              <h4>QUẦN DÀI</h4>
+              <a href="javascript:void(0)">Quần jean</a>
+              <a href="javascript:void(0)">Quần jogger</a>
+              <a href="javascript:void(0)">Quần tây</a>
+            </div>
+            <div class="mega-col">
+              <h4>QUẦN NGẮN</h4>
+              <a href="javascript:void(0)">Quần short thể thao</a>
+              <a href="javascript:void(0)">Quần short jean</a>
+              <a href="javascript:void(0)">Quần short kaki</a>
+            </div>
+            <div class="mega-col">
+              <h4>PHỤ KIỆN</h4>
+              <a href="javascript:void(0)">Thắt lưng</a>
+              <a href="javascript:void(0)">Vớ / tất</a>
+              <a href="javascript:void(0)">Nón / mũ</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mega-item">
+          <a href="javascript:void(0)">GIÀY</a>
+          <div class="mega-panel">
+            <div class="mega-col">
+              <h4>GIÀY THỂ THAO</h4>
+              <a href="javascript:void(0)">Chạy bộ</a>
+              <a href="javascript:void(0)">Bóng rổ</a>
+              <a href="javascript:void(0)">Bóng đá</a>
+            </div>
+            <div class="mega-col">
+              <h4>GIÀY THỜI TRANG</h4>
+              <a href="javascript:void(0)">Sneaker</a>
+              <a href="javascript:void(0)">Slip-on</a>
+              <a href="javascript:void(0)">Boots</a>
+            </div>
+            <div class="mega-col">
+              <h4>THƯƠNG HIỆU</h4>
+              <a href="javascript:void(0)">Nike</a>
+              <a href="javascript:void(0)">Adidas</a>
+              <a href="javascript:void(0)">Puma</a>
+            </div>
+          </div> 
+        </div>
+        <div class="mega-item">
+          <a href="javascript:void(0)">PHỤ KIỆN</a>
+          <div class="mega-panel">
+            <div class="mega-col">
+              <h4>BÓNG</h4>
+              <a href="javascript:void(0)">Tennis</a>
+              <a href="javascript:void(0)">Bóng rổ</a>
+              <a href="javascript:void(0)">Bóng đá</a>
+            </div>
+            <div class="mega-col">
+              <h4>TÚI XÁCH & VÍ</h4>
+              <a href="javascript:void(0)">Tote back</a>
+              <a href="javascript:void(0)">Shoulder-back</a>
+              <a href="javascript:void(0)">Clutch (ví cầm tay)</a>
+            </div>
+            <div class="mega-col">
+              <h4>KHÁC</h4>
+              <a href="javascript:void(0)">Vợt Pickleball</a>
+              <a href="javascript:void(0)">Vớ/Tất</a>
+              <a href="javascript:void(0)">Nón/Mũ</a>
+            </div>
+          </div> 
+        </div>
+        
+        <a href="javascript:void(0)">SALE</a>
+        <a href="javascript:void(0)">TIN TỨC</a>
+        <a href="javascript:void(0)">LIÊN HỆ</a>
+      </div>
+    </nav>
+
+
+  <div class="main-content-wrapper">
+    <div class="product-sidebar">
+      <h3>Danh Mục Sản Phẩm</h3>
+      <div class="filter-group">
+        <h4>ÁO ĐẤU | JERSEY</h4>
+      </div>
+      
+      <div class="filter-group">
+        <h4>ÁO</h4>
+      </div>
+
+      <div class="filter-group">
+        <h4>QUẦN</h4>
+      </div>
+
+      <div class="filter-group">
+        <h4>GIÀY</h4>
+      </div>
+  
+      <div class="filter-group">
+        <h4>PHỤ KIỆN</h4>
+      </div>
+
+      <div class="filter-group price-filter">
+        <h3>GIÁ SẢN PHẨM</h3>
+        <div class="price-options">
+          <label><input type="checkbox" name="price" value="0-500"> DƯỚI 500.000Đ</label>
+          <label><input type="checkbox" name="price" value="500-1000"> 500.000Đ - 1.000.000Đ</label>
+          <label><input type="checkbox" name="price" value="1000-2000"> 1.000.000Đ - 2.000.000Đ</label>
+          <label><input type="checkbox" name="price" value="2000-3000"> 2.000.000Đ - 3.000.000Đ</label>
+          <label><input type="checkbox" name="price" value="3000-4000"> 3.000.000Đ - 4.000.000Đ</label>
+          <label><input type="checkbox" name="price" value="4000-max"> TRÊN 4.000.000Đ</label>
+        </div>
+      </div>
+      <div class="filter-group size-filter">
+        <h3>KÍCH THƯỚC</h3>
+        <div class="size-options">
+          <span class="size-box">26</span>
+          <span class="size-box">27</span>
+          <span class="size-box">28</span>
+          <span class="size-box">28.5</span>
+          <span class="size-box">29</span>
+          <span class="size-box">30</span>
+          <span class="size-box">30.5</span>
+          <span class="size-box">31</span>
+          <span class="size-box">32</span>
+          <span class="size-box">33</span>
+          <span class="size-box">34</span>
+          <span class="size-box">35</span>
+          <span class="size-box">36</span>
+          <span class="size-box">37</span>
+          <span class="size-box">38</span>
+          <span class="size-box">39</span>
+          <span class="size-box">40</span>
+          <span class="size-box">41</span>
+          <span class="size-box">42</span>
+          <span class="size-box">43</span>
+          <span class="size-box">44</span>
+          <span class="size-box">45</span>
+          <span class="size-box">46</span>
+          <span class="size-box">47</span>
+          <span class="size-box">XXS</span>
+          <span class="size-box">XS</span>
+          <span class="size-box">S</span>
+          <span class="size-box">M</span>
+          <span class="size-box">L</span>
+          <span class="size-box">XL</span>
+          <span class="size-box">XXL</span>
+          <span class="size-box">XXXL</span>
+        </div>
+      </div>
+    </div>
+    <div class="product-main-content">
+      <section class="new-arrivals-section">
+        <h2 class="category-title">ÁO</h2>
+        <div class="product-grid">
+          
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-14%</span>
+            <img src="images/image product/img_product_1.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">2.200.000đ</span>
+              <span class="price">1.890.000đ</span>
+            </div>
+            <h3 class="name">ÁO THUN ADIDAS DỆT JACQUARD ADICOLOR NỮ - TRẮNG - “JV9647”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-11%</span>
+            <img src="images/image product/img_product_2.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">560.000đ</span>
+              <span class="price">499.000đ</span>
+            </div>
+            <h3 class="name">ÁO ĐẤU THỜI TRANG OVO X NBA GOLDEN STATE WARRIORS - VÀNG " GSY-03 "</h3>
+          </a>
+      
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-10%</span>
+            <img src="images/image product/img_product_3.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">445.000đ</span>
+              <span class="price">399.000đ</span>
+            </div>
+            <h3 class="name">ÁO THỜI TRANG NAM AIR JORDAN RARE - ĐEN " IB3130-010 "</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-15%</span>
+            <img src="images/image product/img_product_4.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">2.350.000đ</span>
+              <span class="price">2.000.000đ</span>
+            </div>
+            <h3 class="name">ÁO THUN THỜI TRANG PUMA- BLUE “627933 18”</h3>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="product-grid">
+          
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-14%</span>
+            <img src="images/image product/img_product_5.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">2.200.000đ</span>
+              <span class="price">1.890.000đ</span>
+            </div>
+            <h3 class="name">ÁO HODDIE NIKE FC BARCELONA X CACTUS JACK SPRAY LOGO HOODIE ‘BLUE’ “FQCJ-HS01”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-20%</span>
+            <img src="images/image product/img_product_6.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">325.000đ</span>
+              <span class="price">259.000đ</span>
+            </div>
+            <h3 class="name">ÁO THỜI TRANG PALLADIUM -TRẮNG “1011320 232”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-8%</span>
+            <img src="images/image product/img_product_7.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">1.410.000đ</span>
+              <span class="price">1.299.000đ</span>
+            </div>
+            <h3 class="name">ÁO ADIDAS JERSEY JUDE BELLINGHAM “IM7918”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-13%</span>
+            <img src="images/image product/img_product_8.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">1.840.000đ</span>
+              <span class="price">1.599.000đ</span>
+            </div>
+            <h3 class="name">ÁO THUN THỜI TRANG NEW ERA YANKEES “13334575”</h3>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="product-grid">
+          
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-14%</span>
+            <img src="images/image product/img_product_9.png" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">2.200.000đ</span>
+              <span class="price">1.890.000đ</span>
+            </div>
+            <h3 class="name">ÁO BÓNG ĐÁ SÂN NHÀ MANCHESTER UNITED 25/26 - FAN VERSION “JI7428”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-20%</span>
+            <img src="images/image product/img_product_10.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">325.000đ</span>
+              <span class="price">259.000đ</span>
+            </div>
+            <h3 class="name">ÁO THỜI TRANG NEW ERA YANKEES - HỒNG “14447854”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-8%</span>
+            <img src="images/image product/img_product_11.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">1.410.000đ</span>
+              <span class="price">1.299.000đ</span>
+            </div>
+            <h3 class="name">ÁO THUN ADIDAS KẺ 3 SỌC NHỎ ADICOLOR NỮ - XANH NAVY - “IY7228”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-13%</span>
+            <img src="images/image product/img_product_12.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">1.840.000đ</span>
+              <span class="price">1.599.000đ</span>
+            </div>
+            <h3 class="name">ÁO THỜI TRANG NAM NEW ERA NEW YORK YANKESS - ĐEN “11477874”</h3>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="product-grid">
+          
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-14%</span>
+            <img src="images/image product/img_product_13.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">2.200.000đ</span>
+              <span class="price">1.890.000đ</span>
+            </div>
+            <h3 class="name">ÁO KHOÁC THỂ THAO ADIDAS OWN THE RUN 3 SỌC - ĐEN "IK4986"</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-20%</span>
+            <img src="images/image product/img_product_14.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">325.000đ</span>
+              <span class="price">259.000đ</span>
+            </div>
+            <h3 class="name">ÁO THỂ THAO NỮ ADIDAS CLIMACOOL OWN THE RUN - TRẮNG "JC9889"</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-8%</span>
+            <img src="images/image product/img_product_15.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">1.410.000đ</span>
+              <span class="price">1.299.000đ</span>
+            </div>
+            <h3 class="name">ÁO THUN ADIDAS THỜI TRANG ADICOLOR JERSEY- TRẮNG “IM9459”</h3>
+          </a>
+
+          <a href="product_details.html" class="product-item">
+            <span class="discount-badge">-13%</span>
+            <img src="images/image product/img_product_16.jpeg" alt="#">
+            <div class="price-wrapper">
+              <span class="old-price">1.840.000đ</span>
+              <span class="price">1.599.000đ</span>
+            </div>
+            <h3 class="name">ÁO THUN ADIDAS CHẠY BỘ 3 SỌC OWN THE RUN - MÀU XANH DƯƠNG “ IK5020 “</h3>
+          </a>
+        </div>
+      </section>
+      <div class="pagination-container">
+    <a href="#" class="page-link prev-next disabled">« Trước</a>
+    <a href="#" class="page-link active">1</a>
+    <a href="#" class="page-link">2</a>
+    <a href="#" class="page-link">3</a>
+    <span class="dots">...</span>
+    <a href="#" class="page-link">10</a>
+    <a href="#" class="page-link prev-next">Sau »</a>
+  </div>
+    </div>
+    </div>
+
+    
+  <ul class="wrapper">
+    <li class="icon facebook">
+      <span class="tooltip">Facebook</span>
+      <span>
+        <a href="#"><img src="images/image main/img-wrapper-facebook.png" alt="" width="20px" height="20px"></a>
+      </span>
+    </li> 
+    <li class="icon instagram">
+      <span class="tooltip">Instagram</span>
+      <span>
+        <a href="#"><img src="images/image main/img-wrapper-instagram.png" alt="" width="20px" height="20px"></a>
+      </span>
+    </li>
+    <li class="icon messenger">
+      <span class="tooltip">Messenger</span>
+      <span>
+        <a href="#"><img src="images/image main/img-wrapper-facebook-messenger.png" alt="" width="20px" height="20px"></a>
+      </span>
+    </li>
+    <li class="icon youtube">
+      <span class="tooltip">Youtube</span>
+      <span>
+        <a href="#"><img src="images/image main/img-wrapper-youtube.png" alt="" width="20px" height="20px"></a>
+      </span>
+    </li>
+  </ul>
+
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>VOGUE SHOP</h4>
+        <a href="javascript:void(0)">Cam kết 100% chính hãng</a>
+        <a href="javascript:void(0)">Hoàn tiền 200% nếu hàng giả</a>
+        <a href="javascript:void(0)">Nhận hàng kiểm tra thanh toán</a>
+        <a href="javascript:void(0)">Đổi size trong 3 ngày</a>
+      </div>
+      <div class="footer-col">
+        <h4>Danh mục</h4>
+        <a href="javascript:void(0)">Áo</a>
+        <a href="javascript:void(0)">Quần</a>
+        <a href="javascript:void(0)">Giày</a>
+        <a href="javascript:void(0)">Phụ kiện</a>
+      </div>
+      <div class="footer-col">
+        <h4>Chính sách</h4>
+        <a href="javascript:void(0)">Chính sách giao hàng</a>
+        <a href="javascript:void(0)">Chính sách đổi trả</a>
+        <a href="javascript:void(0)">Hướng dẫn mua hàng</a>
+      </div>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <p>Follow us: Instagram</p>
+      </div>
+    </div> 
+    <div class="copyright">© 2025 Shop Quần Áo Demo</div>
+  </footer>
+
+  <div class="cart-popup" id="cartPopup">
+    <button class="close-cart" onclick="toggleCart()">✖</button>
+    <h3>🛒 Giỏ hàng của bạn</h3>
+    <div id="cartItems"></div>
+    <p class="cart-total">Tổng: <span id="total">0</span>đ</p>
+    <button class="checkout-btn">Đặt hàng</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
