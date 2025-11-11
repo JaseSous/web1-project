@@ -330,14 +330,20 @@ nav a:hover {
 
 /* Kích thước (Size Filter) */
 .size-filter h3 {
-  margin-top: 20px;
+  /* FIX: Loại bỏ margin top */
+  margin-top: 10px; 
   border-top: 1px solid #eee;
   padding-top: 15px;
+  margin-bottom: 15px;
 }
 
+/* Kích thước (Size Filter) */
 .size-options {
   display: flex;
   flex-wrap: wrap;
+  max-height: 150px; 
+  overflow-y: auto; 
+  overflow-x: hidden;
   gap: 6px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -345,13 +351,15 @@ nav a:hover {
 
 .size-box {
   border: 1px solid #ccc;
-  padding: 4px 8px;
+  padding: 8px 12px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.2s;
-  flex-basis: calc(25% - 6px);
+  width: calc(25% - 4.5px);
+  box-sizing: border-box; 
   text-align: center;
+  user-select: none;
 }
 
 .size-box:hover,
@@ -368,12 +376,13 @@ nav a:hover {
 
 /* Điều chỉnh lại style h2 cho tiêu đề danh mục trong cột phải */
 .product-main-content h2 {
-  font-size: 28px;
+  font-size: 35px;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 0 20px 0;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   border-bottom: 1px solid #000;
+  text-align: center;
 }
 
 .new-arrivals-section, 
@@ -408,7 +417,7 @@ nav a:hover {
 .product-grid {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 10px;
+  gap: 5px 10px;
   justify-items: center;
 }
 
