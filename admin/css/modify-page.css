@@ -106,6 +106,7 @@
 .content-panel .add-panel .buttons .button {
     height: 30px;
     width: 100px;
+    min-width: fit-content;
     border-radius: 0;
     border: none;
     cursor: pointer;
