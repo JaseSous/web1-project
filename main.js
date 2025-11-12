@@ -65,12 +65,6 @@ searchInput.addEventListener('keypress', (e) => {
   }
 });
 
-// ========== ĐĂNG NHẬP ==========
-const loginBtn = document.querySelector('.login-btn');
-loginBtn.addEventListener('click', () => {
-  alert('Chức năng đăng nhập đang được phát triển!');
-});
-
 // ========== ĐÓNG GIỎ HÀNG KHI CLICK BÊNGOÀI ==========
 document.addEventListener('click', (e) => {
   const popup = document.getElementById('cartPopup');
