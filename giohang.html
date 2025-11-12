@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="css/giohang.css" />
+  </head>
+
+ <!-- Thanh điều hướng -->
+    <header style="overflow: visible;">
+      <div class="header-container">
+        <div class="header-left">
+          <h1>Shop Quần Áo</h1>
+        </div>
+
+        <div class="header-center">
+          <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+          <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="header-right">
+          <button class="cart-btn">
+            🛒 Giỏ hàng <span id="cartCount" class="cart-badge">0</span>
+          </button>
+          <button class="login-btn">Đăng nhập</button>
+        </div>
+      </div>
+
+      <nav style="overflow: visible;">
+        <div class="mega-nav">
+          <div class="mega-item">
+            <a href="javascript:void(0)">ÁO</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>ÁO KHOÁC</h4>
+                <a href="javascript:void(0)">Áo khoác nam</a>
+                <a href="javascript:void(0)">Áo khoác nữ</a>
+                <a href="javascript:void(0)">Áo gió</a>
+              </div>
+              <div class="mega-col">
+                <h4>ÁO THỂ THAO</h4>
+                <a href="javascript:void(0)">Áo chạy bộ</a>
+                <a href="javascript:void(0)">Áo gym</a>
+                <a href="javascript:void(0)">Áo bóng rổ</a>
+              </div>
+              <div class="mega-col">
+                <h4>ÁO THỜI TRANG</h4>
+                <a href="javascript:void(0)">Áo thun</a>
+                <a href="javascript:void(0)">Áo sơ mi</a>
+                <a href="javascript:void(0)">Áo polo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mega-item">
+            <a href="javascript:void(0)">QUẦN</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>QUẦN DÀI</h4>
+                <a href="javascript:void(0)">Quần jean</a>
+                <a href="javascript:void(0)">Quần jogger</a>
+                <a href="javascript:void(0)">Quần tây</a>
+              </div>
+              <div class="mega-col">
+                <h4>QUẦN NGẮN</h4>
+                <a href="javascript:void(0)">Quần short thể thao</a>
+                <a href="javascript:void(0)">Quần short jean</a>
+                <a href="javascript:void(0)">Quần short kaki</a>
+              </div>
+              <div class="mega-col">
+                <h4>PHỤ KIỆN</h4>
+                <a href="javascript:void(0)">Thắt lưng</a>
+                <a href="javascript:void(0)">Vớ / tất</a>
+                <a href="javascript:void(0)">Nón / mũ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mega-item">
+            <a href="javascript:void(0)">GIÀY</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>GIÀY THỂ THAO</h4>
+                <a href="javascript:void(0)">Chạy bộ</a>
+                <a href="javascript:void(0)">Bóng rổ</a>
+                <a href="javascript:void(0)">Bóng đá</a>
+              </div>
+              <div class="mega-col">
+                <h4>GIÀY THỜI TRANG</h4>
+                <a href="javascript:void(0)">Sneaker</a>
+                <a href="javascript:void(0)">Slip-on</a>
+                <a href="javascript:void(0)">Boots</a>
+              </div>
+              <div class="mega-col">
+                <h4>THƯƠNG HIỆU</h4>
+                <a href="javascript:void(0)">Nike</a>
+                <a href="javascript:void(0)">Adidas</a>
+                <a href="javascript:void(0)">Puma</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mega-item">
+            <a href="javascript:void(0)">PHỤ KIỆN</a>
+            <div class="mega-panel">
+              <div class="mega-col">
+                <h4>BÓNG</h4>
+                <a href="javascript:void(0)">Tennis</a>
+                <a href="javascript:void(0)">Bóng rổ</a>
+                <a href="javascript:void(0)">Bóng đá</a>
+              </div>
+              <div class="mega-col">
+                <h4>TÚI XÁCH & VÍ</h4>
+                <a href="javascript:void(0)">Tote back</a>
+                <a href="javascript:void(0)">Shoulder-back</a>
+                <a href="javascript:void(0)">Clutch (ví cầm tay)</a>
+              </div>
+              <div class="mega-col">
+                <h4>KHÁC</h4>
+                <a href="javascript:void(0)">Vợt Pickleball</a>
+                <a href="javascript:void(0)">Vớ/Tất</a>
+                <a href="javascript:void(0)">Nón/Mũ</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="javascript:void(0)">SALE</a>
+          <a href="javascript:void(0)">TIN TỨC</a>
+          <a href="javascript:void(0)">LIÊN HỆ</a>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Giỏ hàng-->
+     <main class="cart">
+  <!-- Dòng tiêu đề -->
+  <div class="cart-header">
+    <div><input type="checkbox"></div>
+    <div>Sản phẩm</div>
+    <div>Phân loại</div>
+    <div>Đơn giá</div>
+    <div>Số lượng</div>
+    <div>Thành tiền</div>
+    <div>Thao tác</div>
+  </div>
+
+  <!-- Dòng sản phẩm 1 -->
+        <div class="cart-item">
+            <div><input type="checkbox"></div>
+            <div class="product-info">
+                <img src="pic/ao1.jpg" alt="Áo MU">
+                <div class="product-name">Áo MU</div>
+            </div>
+            <div>Màu: Đen, Size: XL</div>
+            <div><s>199.000đ</s><br><span class="price">149.000đ</span></div>
+            <div class="quantity">
+                <button class="qty-btn">-</button>
+                <input type="number" value="1" min="1" class="qty-input">
+                <button class="qty-btn">+</button>
+            </div>
+            <div class="price">149.000đ</div>
+            <div class="operation">Xóa</div>
+        </div>
+
+    <!-- Dòng sản phẩm 2 -->
+        <div class="cart-item">
+            <div><input type="checkbox"></div>
+            <div class="product-info">
+                <img src="pic/ao3.jpg" alt="Áo MU">
+                <div class="product-name">Áo MU</div>
+            </div>
+            <div>Màu: Đỏ, Size: XXL</div>
+            <div><s>199.000đ</s><br><span class="price">149.000đ</span></div>
+            <div class="quantity">
+                <button class="qty-btn">-</button>
+                <input type="number" value="1" min="1" class="qty-input">
+                <button class="qty-btn">+</button>
+            </div>
+            <div class="price">149.000đ</div>
+            <div class="operation">Xóa</div>
+        </div>
+    </main>
+
+    <!-- Thanh tổng kết-->
+     <div class="cart-footer">
+      <div class="cart-footer-left">
+        <input type="checkbox" id="selectAll">
+        <label for="selectAll">Chọn tất cả (2)</label>
+        <span class="delete-selected">Xóa</span>
+        <span class="save-fav">Lưu vào mục Đã thích</span>
+      </div>
+
+      <div class="cart-footer-right">
+        <div class="total">
+          Tổng cộng (2 sản phẩm): <span class="total-price">298.000đ</span>
+        </div>
+        <a href="#"><button class="buy-btn">Mua Hàng</button></a>
+      </div>
+     </div>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>SHOP QUẦN ÁO DEMO</h4>
+          <a href="javascript:void(0)">Cam kết 100% chính hãng</a>
+          <a href="javascript:void(0)">Hoàn tiền 200% nếu hàng giả</a>
+          <a href="javascript:void(0)">Nhận hàng kiểm tra thanh toán</a>
+          <a href="javascript:void(0)">Đổi size trong 3 ngày</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Danh mục</h4>
+          <a href="javascript:void(0)">Áo</a>
+          <a href="javascript:void(0)">Quần</a>
+          <a href="javascript:void(0)">Giày</a>
+          <a href="javascript:void(0)">Phụ kiện</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Chính sách</h4>
+          <a href="javascript:void(0)">Chính sách giao hàng</a>
+          <a href="javascript:void(0)">Chính sách đổi trả</a>
+          <a href="javascript:void(0)">Hướng dẫn mua hàng</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Liên hệ</h4>
+          <p>Follow us: Instagram</p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © 2025 Shop Quần Áo Demo
+      </div>
+    </footer>
+  </body>
+</html>
