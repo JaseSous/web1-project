@@ -370,6 +370,31 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* --- BỔ SUNG CHO BỘ LỌC KÍCH THƯỚC --- */
+
+/* 1. Ẩn checkbox mặc định đi */
+.size-filter .size-box input[type="checkbox"] {
+  /* Ẩn hoàn toàn checkbox */
+  appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.size-filter .size-box:has(input[type="checkbox"]:checked) {
+  border-color: #000;   
+  background: #000;   
+  color: #fff;        
+  font-weight: bold;
+}
+.size-box:hover:not(:has(input[type="checkbox"]:checked)),
+.size-box.active {
+  border-color: #000;
+  background: #eee;
+  font-weight: bold;
+}
+
 /* Product Main Content (Cột Phải) */
 .product-main-content {
   flex-grow: 1;
