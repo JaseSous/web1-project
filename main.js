@@ -45,26 +45,6 @@ setInterval(nextSlide, 5000);
 
 
 
-
-
-// ========== TÌM KIẾM ==========
-const searchInput = document.querySelector('.header-center input');
-const searchBtn = document.querySelector('.search-btn');
-
-searchBtn.addEventListener('click', () => {
-  const query = searchInput.value.trim();
-  if (query) {
-    alert('Đang tìm kiếm: ' + query);
-    // Thêm logic tìm kiếm thực tế ở đây
-  }
-});
-
-searchInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') {
-    searchBtn.click();
-  }
-});
-
 // ========== ĐÓNG GIỎ HÀNG KHI CLICK BÊNGOÀI ==========
 document.addEventListener('click', (e) => {
   const popup = document.getElementById('cartPopup');
