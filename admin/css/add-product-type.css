@@ -1,0 +1,67 @@
+.content-panel .btn-add {
+    background-color: #30833b;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.content-panel .search-box {
+    width: 300px;
+    height: 35px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.content-panel .add-panel {
+    background: #11212d;
+    border-radius: 8px;
+    padding-block: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-panel .add-panel .title {
+    background-color: #00000070;
+    color: #f7f6f2;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+    margin-inline: 5px;
+    border-radius: 8px 8px 0 0;
+    padding: 10px;
+}
+
+.content-panel .add-panel form {
+    background-color: white;
+    margin-inline: 5px;
+    border-radius: 0 0 8px 8px;
+    padding: 10px;
+    display: flex;
+}
+
+.content-panel .add-panel form .input-section {
+    display: flex;
+    align-items: center;
+}
+
+.content-panel .add-panel form .input-section label {
+    
+}
+
+.content-panel .add-panel form .input-section input {
+    margin-right: 50vh;
+}

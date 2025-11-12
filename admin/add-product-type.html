@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | Thêm loại sản phẩm</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/add-product-type.css">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <img src="images/logo.png">
+                <div>
+                    <h1>Vogue Shop</h1>
+                    <hr>
+                    <h2>Trang quản lý</h2>
+                </div>
+            </div>
+
+            <div class="menu-panel">
+                <a href="dashboard.html">
+                    <img src="images/dashboard.png">
+                    Bảng thống kê
+                </a>
+                
+                <a href="clients.html">
+                    <img src="images/customers.png">
+                    Quản lý khách hàng
+                </a>
+                
+                <!-- product -->
+                <input type="checkbox" id="toggle-product-submenu" style="display: none;">
+                <label for="toggle-product-submenu">
+                    <img src="images/product-management.png">
+                    Quản lý sản phẩm
+                    <img class="arrow" src="images/arrow-down.png">
+                </label>
+                
+                <div class="submenu">
+                    <a href="product-type.html">
+                        <img src="images/product-type.png">
+                        Quản lý loại sản phẩm
+                    </a>
+                    <a href="product-category.html">
+                        <img src="images/category.png">
+                        Quản lý danh mục
+                    </a>
+                    <a href="import.html">
+                        <img src="images/import-goods.png">
+                        Nhập sản phẩm
+                    </a>
+                    <a href="pricing.html">
+                        <img src="images/pricing.png">
+                        Quản lý giá bán
+                    </a>
+                </div>
+                <!-- end -->
+                
+                
+                <a href="order.html">
+                    <img src="images/order.png">
+                    Quản lý đơn hàng
+                </a>
+                
+                <a href="inventory.html">
+                    <img src="images/inventory-management.png">
+                    Quản lý tồn kho
+                </a>
+
+                <a href="settings.html">
+                    <img src="images/admin-settings.png">
+                    Cài đặt
+                </a>
+
+                <a class="logout" href="../main.html">
+                    <img src="images/logout.png">
+                    Đăng xuất
+                </a>
+            </div>
+        </div>
+            
+        <div class="content-panel">
+            <div class="header">
+                <h1>Quản lý loại sản phẩm</h1>
+                <div class="admin-profile">
+                    Xin chào, Admin1
+                    <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+
+            <div class="add-panel">
+                <h1 class="title" href="product-type.html">Thêm loại sản phẩm</h1>
+                <form>
+                    <div class="input-section">
+                        <label>Mã loại</label>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
