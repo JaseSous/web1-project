@@ -12,6 +12,7 @@
     font-weight: 600;
     transition: all 0.3s ease;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 
 .content-panel .search-box {
@@ -116,6 +117,7 @@
     cursor: pointer;
     color: white;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .content-panel .btn-view {

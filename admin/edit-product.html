@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | Sửa sản phẩm</title>
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/modify-page.css">
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="sidebar-title">
+                <img src="images/logo.png">
+                <div>
+                    <h1>Vogue Shop</h1>
+                    <hr>
+                    <h2>Trang quản lý</h2>
+                </div>
+            </div>
+
+            <div class="menu-panel">
+                <a href="dashboard.html">
+                    <img src="images/dashboard.png">
+                    Bảng thống kê
+                </a>
+                
+                <a href="clients.html">
+                    <img src="images/customers.png">
+                    Quản lý khách hàng
+                </a>
+                
+                <!-- product -->
+                <input type="checkbox" id="toggle-product-submenu" style="display: none;">
+                <label for="toggle-product-submenu">
+                    <img src="images/product-management.png">
+                    Quản lý sản phẩm
+                    <img class="arrow" src="images/arrow-down.png">
+                </label>
+                
+                <div class="submenu">
+                    <a href="product-type.html">
+                        <img src="images/product-type.png">
+                        Quản lý loại sản phẩm
+                    </a>
+                    <a href="product-category.html">
+                        <img src="images/category.png">
+                        Quản lý danh mục
+                    </a>
+                    <a href="import.html">
+                        <img src="images/import-goods.png">
+                        Nhập sản phẩm
+                    </a>
+                    <a href="pricing.html">
+                        <img src="images/pricing.png">
+                        Quản lý giá bán
+                    </a>
+                </div>
+                <!-- end -->
+                
+                
+                <a href="order.html">
+                    <img src="images/order.png">
+                    Quản lý đơn hàng
+                </a>
+                
+                <a href="inventory.html">
+                    <img src="images/inventory-management.png">
+                    Quản lý tồn kho
+                </a>
+
+                <a href="settings.html">
+                    <img src="images/admin-settings.png">
+                    Cài đặt
+                </a>
+
+                <a class="logout" href="../main.html">
+                    <img src="images/logout.png">
+                    Đăng xuất
+                </a>
+            </div>
+        </div>
+            
+        <div class="content-panel">
+            <div class="header">
+                <h1>Quản lý danh mục sản phẩm</h1>
+                <div class="admin-profile">
+                    Xin chào, Admin1
+                    <a href="settings.html"><img src="images/admin-profile.png" height="30px" width="30px"></a>
+                </div>
+            </div>
+
+            <div class="add-panel">
+                <h1 class="title">Sửa sản phẩm - SP001</h1>
+                <form action="product-category.html" method="get">
+                    <div class="input-section">
+                        <label>ID sản phẩm</label>
+                        <input type="text" placeholder="ID sản phẩm (bắt buộc)" title="Không thể chỉnh sửa ID sản phẩm" required disabled value="SP001">
+                    </div>
+                    
+                    <div class="input-section">
+                        <label>Tên sản phẩm<span style="color: #d31c26;">*</span></label>
+                        <input type="text" placeholder="Tên sản phẩm (bắt buộc)" title="Nhập tên sản phẩm" required value="Áo Thun">
+                    </div>
+
+                    <div class="input-section">
+                        <label>Danh mục</label>
+                        <select placeholder="Mô tả" title="Nhập mô tả loại sản phẩm">
+                            <option value="" disabled>-- Vui lòng chọn loại sản phẩm --</option>
+                            <optgroup label="Áo khoác">
+                                <option>Áo khoác nam</option>
+                                <option>Áo khoác nữ</option>
+                                <option>Áo gió</option>
+                            </optgroup>
+                            <optgroup label="Áo thể thao">
+                                <option>Áo chạy bộ</option>
+                                <option>Áo gym</option>
+                                <option>Áo bóng rổ</option>
+                            </optgroup>
+                            <optgroup label="Áo thời trang">
+                                <option selected>Áo thun</option>
+                                <option>Áo sơ mi</option>
+                                <option>Áo polo</option>
+                            </optgroup>
+                            <optgroup label="Quần dài">
+                                <option>Quần jean</option>
+                                <option>Quần jogger</option>
+                                <option>Quần tây</option>
+                            </optgroup>
+                            <optgroup label="Quần ngắn">
+                                <option>Quần short thể thao</option>
+                                <option>Quần short jean</option>
+                                <option>Quần short kaki</option>
+                            </optgroup>
+                            <optgroup label="Phụ kiện">
+                                <option>Thắt lưng</option>
+                                <option>Vớ / tất</option>
+                                <option>Nón / mũ</option>
+                            </optgroup>
+                            <optgroup label="Giày thể thao">
+                                <option>Chạy bộ</option>
+                                <option>Bóng rổ</option>
+                                <option>Bóng đá</option>
+                            </optgroup>
+                            <optgroup label="Giày thời trang">
+                                <option>Sneaker</option>
+                                <option>Slip-on</option>
+                                <option>Boots</option>
+                            </optgroup>
+                            <optgroup label="Thương hiệu">
+                                <option>Nike</option>
+                                <option>Adidas</option>
+                                <option>Puma</option>
+                            </optgroup>
+                            <optgroup label="Bóng">
+                                <option>Tennis</option>
+                                <option>Bóng rổ</option>
+                                <option>Bóng đá</option>
+                            </optgroup>
+                            <optgroup label="Túi xách & ví">
+                                <option>Tote back</option>
+                                <option>Shoulder-back</option>
+                                <option>Clutch (ví cầm tay)</option>
+                            </optgroup>
+                            <optgroup label="Khác">
+                                <option>Vợt Pickleball</option>
+                                <option>Vớ/tất</option>
+                                <option>Nón/mũ</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="input-section">
+                        <label>Giá (đồng)</label>
+                        <input type="number" placeholder="Giá sản phẩm" title="Nhập giá sản phẩm" min="0" step="500" value="199000">
+                    </div>
+
+                    <div class="input-section">
+                        <label>Ảnh sản phẩm</label>
+
+                        <div class="product-image-container">
+                            <label class="virtual-container" for="imageinput">
+                                <img class="product-image" src="../images/image product/img_product_1.jpeg">
+                                <img class="change-product-image-icon" src="../images/camera.png">
+                                <input id="imageinput" type="file" accept="image/*" style="display: none;">
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <a class="button cancel" href="product-category.html">Hủy bỏ</a>
+                        <button class="button edit">Sửa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

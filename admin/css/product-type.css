@@ -1,6 +1,7 @@
 .content-panel .btn-add {
     background-color: #30833b;
     color: white;
+    text-decoration: none;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -95,6 +96,7 @@
     cursor: pointer;
     color: white;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .content-panel .btn-view {

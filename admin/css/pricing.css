@@ -62,7 +62,7 @@
 }
 
 .content-panel .table-container th {
-    background-color: #2f3640;
+    background-color: #11212d;
     color: white;
 }
 
@@ -76,6 +76,8 @@
 }
 
 .content-panel .table-container .action-btn {
+    font-size: 13px;
+    text-decoration: none;
     border: none;
     padding: 6px 10px;
     margin: 2px;
