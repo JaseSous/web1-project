@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Admin | Thêm loại sản phẩm</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/add-product-type.css">
+        <link rel="stylesheet" href="css/modify-page.css">
     </head>
 
     <body>
@@ -87,16 +87,31 @@
                 <h1>Quản lý loại sản phẩm</h1>
                 <div class="admin-profile">
                     Xin chào, Admin1
-                    <a href=""><img src="images/admin-profile.png" height="30px" width="30px"></a>
+                    <a href="settings.html"><img src="images/admin-profile.png" height="30px" width="30px"></a>
                 </div>
             </div>
 
             <div class="add-panel">
-                <h1 class="title" href="product-type.html">Thêm loại sản phẩm</h1>
-                <form>
+                <h1 class="title">Thêm loại sản phẩm</h1>
+                <form action="product-type.html" method="get">
                     <div class="input-section">
-                        <label>Mã loại</label>
-                        <input type="text">
+                        <label>Mã loại SP<span style="color: #d31c26;">*</span></label>
+                        <input type="text" placeholder="Mã loại sản phẩm (bắt buộc)" title="Nhập mã loại sản phẩm" required>
+                    </div>
+                    
+                    <div class="input-section">
+                        <label>Tên loại SP<span style="color: #d31c26;">*</span></label>
+                        <input type="text" placeholder="Tên loại sản phẩm (bắt buộc)" title="Nhập tên loại sản phẩm" required>
+                    </div>
+
+                    <div class="input-section">
+                        <label>Mô tả</label>
+                        <input type="text" placeholder="Mô tả" title="Nhập mô tả loại sản phẩm">
+                    </div>
+                    
+                    <div class="buttons">
+                        <a class="button cancel" href="product-type.html">Hủy bỏ</a>
+                        <button class="button add">Thêm</button>
                     </div>
                 </form>
             </div>

@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Quản lý nhập sản phẩm</title>
+        <title>Admin | Quản lý đơn hàng</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/import.css">
+        <link rel="stylesheet" href="css/order.css">
     </head>
 
     <body>
@@ -84,79 +84,80 @@
             
         <div class="content-panel">
             <div class="header">
-                <h1>Quản lý nhập sản phẩm</h1>
+                <h1>Quản lý đơn hàng</h1>
                 <div class="admin-profile">
                     Xin chào, Admin1
                     <a href="settings.html"><img src="images/admin-profile.png" height="30px" width="30px"></a>
                 </div>
             </div>
 
-            <div class="form-container">
-                <h2>Thêm phiếu nhập hàng</h2>
-                <form>
-                    <input type="date" placeholder="Ngày nhập">
-                    <input type="text" placeholder="Tên sản phẩm">
-                    <input type="number" step="1000" min="0" placeholder="Giá nhập (₫)">
-                    <input type="number" min="0" placeholder="Số lượng">
-                    <button type="button">➕ Thêm phiếu</button>
-                </form>
-            </div>
-
-            <div class="controls">
-                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm phiếu nhập hàng..." />
+            <h2 style="color: #f7f6f2; background-color: #11212d; padding: 10px 12px; padding-bottom: 0px; width: fit-content; border-radius: 10px 10px 0px 0px;">Tra cứu đơn hàng</h2>
+            <div class="filter-section">
+                <div>
+                    <label for="fromDate">Từ ngày</label>
+                    <input id="fromDate" type="date" placeholder="Từ ngày">
+                </div>
+                <div>
+                    <label for="toDate">đến ngày</label>
+                    <input id="toDate" type="date" placeholder="Đến ngày">
+                </div>
+                <select>
+                    <option>Tất cả trạng thái</option>
+                    <option>Mới đặt</option>
+                    <option>Đang xử lý</option>
+                    <option>Đã giao</option>
+                    <option>Đã hủy</option>
+                </select>
+                <button> Tra cứu </button>
             </div>
             
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Mã phiếu</th>
-                            <th>Ngày nhập</th>
-                            <th>Sản phẩm</th>
-                            <th>Giá nhập</th>
-                            <th>Số lượng</th>
+                            <th>ID</th>
+                            <th>Khách hàng</th>
+                            <th>Ngày đặt</th>
+                            <th>Tổng tiền</th>
                             <th>Trạng thái</th>
                             <th>Hành động</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>PN001</td>
-                            <td>26/10/2025</td>
-                            <td>Áo Thun Nam</td>
-                            <td>120,000₫</td>
-                            <td>50</td>
-                            <td><span class="status done">Hoàn thành</span></td>
+                            <td>DH001</td>
+                            <td>Nguyễn Mạnh Thắng</td>
+                            <td>12/10/2025</td>
+                            <td>1,250,000₫</td>
+                            <td><span class="status new">Mới đặt</span></td>
                             <td>
-                                <button class="action-btn disable" disabled>Sửa</button>
-                                <button class="action-btn disable" disabled>Hoàn thành</button>
-                                <button class="action-btn delete">Xóa</button>
+                                <button class="btn view">Xem</button>
+                                <a class="btn update" href="update-order.html">Cập nhật</a>
+                                <button class="btn delete">Xóa</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>PN002</td>
-                            <td>27/10/2025</td>
-                            <td>Quần Jean Nữ</td>
-                            <td>250,000₫</td>
-                            <td>30</td>
-                            <td><span class="status pending">Chờ xử lý</span></td>
+                            <td>DH002</td>
+                            <td>Tất Võ Tiến Nam</td>
+                            <td>14/10/2025</td>
+                            <td>890,000₫</td>
+                            <td><span class="status delivered">Đã giao</span></td>
                             <td>
-                                <a class="action-btn edit" href="edit-import.html">Sửa</a>
-                                <button class="action-btn complete">Hoàn thành</button>
-                                <button class="action-btn delete">Xóa</button>
+                                <button class="btn view">Xem</button>
+                                <a class="btn update" href="update-order.html">Cập nhật</a>
+                                <button class="btn delete">Xóa</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>PN003</td>
-                            <td>28/10/2025</td>
-                            <td>Giày Thể Thao</td>
-                            <td>450,000₫</td>
-                            <td>20</td>
-                            <td><span class="status pending">Chờ xử lý</span></td>
+                            <td>DH003</td>
+                            <td>Phú Trương</td>
+                            <td>16/10/2025</td>
+                            <td>540,000₫</td>
+                            <td><span class="status canceled">Đã hủy</span></td>
                             <td>
-                                <a class="action-btn edit" href="edit-import.html">Sửa</a>
-                                <button class="action-btn complete">Hoàn thành</button>
-                                <button class="action-btn delete">Xóa</button>
+                                <button class="btn view">Xem</button>
+                                <a class="btn update" href="update-order.html">Cập nhật</a>
+                                <button class="btn delete">Xóa</button>
                             </td>
                         </tr>
                     </tbody>
@@ -168,6 +169,39 @@
                 <a href="#">2</a>
                 <a href="#">3</a>
                 <a href="#">»</a>
+            </div>
+
+            <div class="order-detail">
+                <h3>Chi tiết đơn hàng #DH001</h3>
+                <div class="order-info">
+                    <p><b>Khách hàng:</b> Nguyễn Mạnh Thắng</p>
+                    <p><b>Ngày đặt:</b> 12/10/2025</p>
+                    <p><b>Tình trạng:</b> Mới đặt</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Áo thun nam</td>
+                            <td>2</td>
+                            <td>200,000₫</td>
+                            <td>400,000₫</td>
+                        </tr>
+                        <tr>
+                            <td>Quần jean</td>
+                            <td>1</td>
+                            <td>850,000₫</td>
+                            <td>850,000₫</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </body>

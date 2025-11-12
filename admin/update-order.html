@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Quản lý loại sản phẩm</title>
+        <title>Admin | Cập nhật đơn hàng</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/product-type.css">
+        <link rel="stylesheet" href="css/modify-page.css">
     </head>
 
     <body>
@@ -84,72 +84,55 @@
             
         <div class="content-panel">
             <div class="header">
-                <h1>Quản lý loại sản phẩm</h1>
+                <h1>Quản lý đơn hàng</h1>
                 <div class="admin-profile">
                     Xin chào, Admin1
                     <a href="settings.html"><img src="images/admin-profile.png" height="30px" width="30px"></a>
                 </div>
             </div>
 
-            <div class="controls">
-                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm loại sản phẩm..." />
-                <a href="add-product-type.html" class="btn-add"><img src="images/product-type-add.png" width="20px" height="width">Thêm loại sản phẩm</a>
-            </div>
-            
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Mã loại</th>
-                            <th>Tên loại sản phẩm</th>
-                            <th>Mô tả</th>
-                            <th>Trạng thái</th>
-                            <th>Hành động</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>LSP01</td>
-                            <td>Áo Nam</td>
-                            <td>Các loại áo dành cho nam giới</td>
-                            <td style="color: green; font-weight: 600;">Hiển thị</td>
-                            <td>
-                                <a href="edit-product-type.html" class="btn btn-edit">Sửa</a>
-                                <button class="btn btn-del">Xóa</button>
-                                <button class="btn btn-an">Ẩn</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LSP02</td>
-                            <td>Quần Nữ</td>
-                            <td>Các loại quần thời trang nữ</td>
-                            <td style="color: green; font-weight: 600;">Hiển thị</td>
-                            <td>
-                                <a href="edit-product-type.html" class="btn btn-edit">Sửa</a>
-                                <button class="btn btn-del">Xóa</button>
-                                <button class="btn btn-an">Ẩn</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LSP03</td>
-                            <td>Áo Khoác</td>
-                            <td>Áo khoác thời trang cho mọi giới tính</td>
-                            <td style="color: red; font-weight: 600;">Ẩn</td>
-                            <td>
-                                <a href="edit-product-type.html" class="btn btn-edit">Sửa</a>
-                                <button class="btn btn-del">Xóa</button>
-                                <button class="btn btn-an">Hiện</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                
-            <div class="pagination">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">»</a>
+            <div class="add-panel">
+                <h1 class="title">Cập nhật đơn hàng - DH001</h1>
+                <div class="order-detail">
+                    <h3>Chi tiết đơn hàng #DH001</h3>
+                    <div class="order-info">
+                        <p><b>Khách hàng:</b> Nguyễn Mạnh Thắng</p>
+                        <p><b>Ngày đặt:</b> 12/10/2025</p>
+                        <p><b>Tình trạng:</b> Mới đặt</p>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Áo thun nam</td>
+                                <td>2</td>
+                                <td>200,000₫</td>
+                                <td>400,000₫</td>
+                            </tr>
+                            <tr>
+                                <td>Quần jean</td>
+                                <td>1</td>
+                                <td>850,000₫</td>
+                                <td>850,000₫</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="buttons">
+                        <a class="button cancel" href="order.html">Quay lại</a>
+                        <a class="button disabled">Mới đặt</a>
+                        <a class="button processed" href="order.html">Đã xử lý</a>
+                        <a class="button delivered" href="order.html">Đã giao</a>
+                        <a class="button cancelled" href="order.html">Hủy</a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

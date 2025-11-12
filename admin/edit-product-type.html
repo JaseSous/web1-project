@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Quản lý loại sản phẩm</title>
+        <title>Admin | Sửa loại sản phẩm</title>
         <link rel="stylesheet" href="css/global.css">
-        <link rel="stylesheet" href="css/product-type.css">
+        <link rel="stylesheet" href="css/modify-page.css">
     </head>
 
     <body>
@@ -91,65 +91,29 @@
                 </div>
             </div>
 
-            <div class="controls">
-                <input class="search-box" type="text" placeholder="🔍 Tìm kiếm loại sản phẩm..." />
-                <a href="add-product-type.html" class="btn-add"><img src="images/product-type-add.png" width="20px" height="width">Thêm loại sản phẩm</a>
-            </div>
-            
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Mã loại</th>
-                            <th>Tên loại sản phẩm</th>
-                            <th>Mô tả</th>
-                            <th>Trạng thái</th>
-                            <th>Hành động</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>LSP01</td>
-                            <td>Áo Nam</td>
-                            <td>Các loại áo dành cho nam giới</td>
-                            <td style="color: green; font-weight: 600;">Hiển thị</td>
-                            <td>
-                                <a href="edit-product-type.html" class="btn btn-edit">Sửa</a>
-                                <button class="btn btn-del">Xóa</button>
-                                <button class="btn btn-an">Ẩn</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LSP02</td>
-                            <td>Quần Nữ</td>
-                            <td>Các loại quần thời trang nữ</td>
-                            <td style="color: green; font-weight: 600;">Hiển thị</td>
-                            <td>
-                                <a href="edit-product-type.html" class="btn btn-edit">Sửa</a>
-                                <button class="btn btn-del">Xóa</button>
-                                <button class="btn btn-an">Ẩn</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>LSP03</td>
-                            <td>Áo Khoác</td>
-                            <td>Áo khoác thời trang cho mọi giới tính</td>
-                            <td style="color: red; font-weight: 600;">Ẩn</td>
-                            <td>
-                                <a href="edit-product-type.html" class="btn btn-edit">Sửa</a>
-                                <button class="btn btn-del">Xóa</button>
-                                <button class="btn btn-an">Hiện</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-                
-            <div class="pagination">
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">»</a>
+            <div class="add-panel">
+                <h1 class="title">Sửa loại sản phẩm - LSP01</h1>
+                <form action="product-type.html" method="get">
+                    <div class="input-section">
+                        <label>Mã loại SP</label>
+                        <input type="text" placeholder="Mã loại sản phẩm (bắt buộc)" title="Không thể chỉnh sửa loại sản phẩm" required value="LSP01" disabled>
+                    </div>
+                    
+                    <div class="input-section">
+                        <label>Tên loại SP<span style="color: #d31c26;">*</span></label>
+                        <input type="text" placeholder="Tên loại sản phẩm (bắt buộc)" title="Nhập tên loại sản phẩm" required value="Áo nam">
+                    </div>
+
+                    <div class="input-section">
+                        <label>Mô tả</label>
+                        <input type="text" placeholder="Mô tả" title="Nhập mô tả loại sản phẩm" value="Các loại áo dành cho nam giới">
+                    </div>
+                    
+                    <div class="buttons">
+                        <a class="button cancel" href="product-type.html">Hủy bỏ</a>
+                        <button class="button edit">Sửa</button>
+                    </div>
+                </form>
             </div>
         </div>
     </body>

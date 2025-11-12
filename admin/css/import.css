@@ -123,6 +123,8 @@
 }
 
 .content-panel .table-container .action-btn {
+    font-size: 13px;
+    text-decoration: none;
     border: none;
     padding: 6px 10px;
     margin: 2px;
@@ -130,6 +132,13 @@
     cursor: pointer;
     color: white;
 }
+
+.content-panel .table-container .disable {
+    background: rgb(86, 86, 86);
+    cursor: not-allowed;
+}
+
+
 
 .content-panel .table-container .edit {
     background: #3498db;
@@ -145,6 +154,10 @@
 
 .content-panel .table-container .action-btn:hover {
     opacity: 0.9;
+}
+
+.content-panel .table-container .disable:hover {
+    opacity: 1;
 }
 
 .content-panel .pagination {
